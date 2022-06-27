@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {font-family: 'Noto Sans', sans-serif;}
+
+.card {
+    @apply rounded-lg shadow-md p-4 bg-white border-gray-200 border;
+}
+
+input[type="number"] {
+    @apply text-sm px-4 py-2 border border-gray-300 rounded-lg;
+}
+
+.radio {
+    @apply items-center mb-4 gap-2 flex flex-wrap;
+}
+
+.titles {
+    @apply font-semibold mb-2;
+}
+
+

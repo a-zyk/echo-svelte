@@ -14,8 +14,8 @@ const config = {
 	kit: {
 		adapter: adapter({
 			// default options are shown
-			pages: 'docs',
-			assets: 'docs',
+			pages: 'build',
+			assets: 'build',
 			fallback: null,
 			precompress: false
 		  }),

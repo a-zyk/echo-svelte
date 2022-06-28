@@ -3,25 +3,33 @@
 	import Toggle from '../Toggle.svelte';
 	import RadioBtn from '../../components/RadioBtn.svelte';
 	import Textarea from '../../components/Textarea.svelte';
+	import Tooltip from '../../components/Tooltip.svelte';
 </script>
 
-<Toggle classes="card">
+<Toggle autoclosable=true classes="card">
 	<div slot="title">Kepenys</div>
 	<div slot="content">
-		<div class="titles">Kepenų parenchima</div>
+		<div class="flex gap-2">
+			<div class="titles">Kepenų parenchima</div>
+			<Tooltip tooltipText="Normalių kepenų parenchima yra homogeniška." />
+		</div>
 		<div class="radio">
 			<RadioBtn bind:group={$liverStore.echogen} value="homogeniška" name="echogenicity" />
 			<RadioBtn bind:group={$liverStore.echogen} value="heterogeniška" name="echogenicity" />
 		</div>
-
-		<div class="titles">Lyginant su blužnimi kepenų parenchimos echogeniškumas</div>
+		<div class="flex gap-2">
+			<div class="titles">Lyginant su blužnimi kepenų parenchimos echogeniškumas</div>
+			<Tooltip tooltipText="Normalios kepenys yra hipoechogeniškos lyginant su blužnimi." />
+		</div>
 		<div class="radio">
 			<RadioBtn bind:group={$liverStore.comtoSpleen} value="izoechogeniška" name="toSpleen" />
 			<RadioBtn bind:group={$liverStore.comtoSpleen} value="hipoechogeniška" name="toSpleen" />
 			<RadioBtn bind:group={$liverStore.comtoSpleen} value="hiperechogeniška" name="toSpleen" />
 		</div>
-
-		<div class="titles">Kepenų skilčių kraštai</div>
+		<div class="flex gap-2">
+			<div class="titles">Kepenų skilčių kraštai</div>
+			<Tooltip tooltipText="Normalių kepenų kraštai yra aštrūs." />
+		</div>
 		<div class="radio">
 			<RadioBtn bind:group={$liverStore.margins} value="aštrūs" name="margins" />
 			<RadioBtn bind:group={$liverStore.margins} value="suapvalėję" name="margins" />

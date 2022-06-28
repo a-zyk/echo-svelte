@@ -19,6 +19,7 @@
 	import AdrenalsDescription from '../components/descriptions/Adrenals.svelte';
 </script>
 
+<div class="container">
 <div class="flex gap-5 relative">
 	<div class="flex flex-col w-1/2 gap-5">
 		<Bladder />
@@ -31,6 +32,7 @@
 		<Pancreas />
 		<Adrenals />
 	</div>
+
 
 	<div class="card flex flex-col w-1/2 sticky top-0 self-start">
 		<div class="font-bold text-lg text-center">Echoskopijos aprašymas</div>
@@ -46,4 +48,5 @@
 			<AdrenalsDescription />
 		</div>
 	</div>
+</div>
 </div>

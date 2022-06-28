@@ -4,7 +4,7 @@
 	import * as TXT from '../../texts/kidney';
 </script>
 
-<Toggle>
+<Toggle autoclosable=true classes="card mt-4">
     <div class="text-center" slot="title">Inkstai</div>
 
 	<div slot="content">

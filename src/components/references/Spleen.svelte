@@ -4,7 +4,7 @@
 	import * as TXT from '../../texts/spleen';
 </script>
 
-<Toggle>
+<Toggle autoclosable=true classes="card mt-4">
 <div class="text-center" slot="title">Blužnis</div>
 <div slot="content">
 

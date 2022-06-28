@@ -4,13 +4,15 @@
 	import RadioBtn from '../../components/RadioBtn.svelte';
 	import NumberInput from '../../components/NumberInput.svelte';
 	import Textarea from '../../components/Textarea.svelte';
+	
 </script>
 
-<Toggle classes="card">
+<Toggle autoclosable=true classes="card">
 	<div slot="title">Šlapimo pūslė</div>
 
 	<div slot="content">
 		<div class="titles ">Šlapimo pūslės sienelė</div>
+
 		<div class="radio">
 			<RadioBtn
 				bind:group={$bladderStore.wallThickness}
@@ -24,7 +26,11 @@
 			/>
 		</div>
 
-		<NumberInput bind:value={$bladderStore.thickness} title="Sienelės storis, cm" />
+		<NumberInput
+			tooltipText="Normalus šlapimo pūslės sienelės storis: katėms ≤ 0,17 cm,šunims ≤ 0,3 cm."
+			bind:value={$bladderStore.thickness}
+			title="Sienelės storis, cm"
+		/>
 
 		<Textarea
 			title="Kiti pakitimai"

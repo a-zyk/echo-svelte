@@ -4,7 +4,7 @@
 	import * as TXT from '../../texts/bladder.js';
 </script>
 
-<Toggle>
+<Toggle autoclosable=true classes="card mt-4">
 	<div class="text-center" slot="title">Šlapimo pūslė</div>
 	<div slot="content">
 		<Toggle classes="card mt-4">

@@ -10,7 +10,7 @@
 	const ACTIVE_CLASSES = 'border-blue-500 border-b-2 font-bold';
 </script>
 
-<nav class="">
+<nav class="mb-2">
 	<ul class="flex justify-evenly">
 		{#each navItems as navItem}
 			<li class="py-3 text-blue-500 {$page.url.pathname == navItem.link ? ACTIVE_CLASSES : ''}">

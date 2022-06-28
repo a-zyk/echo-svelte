@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
 
 	let navItems = [
-		{ name: 'Apie', link: '/' },
-		{ name: 'Aprašymas', link: '/description' },
+		{ name: 'Apie', link: '/about' },
+		{ name: 'Aprašymas', link: '/' },
 		{ name: 'Dažnesnių patologijų aprašymai', link: '/pathologies' }
 	];
 

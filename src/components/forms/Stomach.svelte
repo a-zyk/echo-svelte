@@ -23,9 +23,9 @@
 		</div>
 
 		<div class="flex gap-5">
-			<NumberInput tooltipText="Normalaus skrandžio sienelės storis katei yra 0.2-0.4cm, šunims 0.2-0.5cm." bind:value={$stomachStore.thickness} title="Sienelės storis, cm" />
+			<NumberInput tooltipText="Normalus skrandžio sienelės storis katei yra 0.2-0.4cm, šunims 0.2-0.5cm." bind:value={$stomachStore.thickness} title="Sienelės storis, cm" />
 
-			<NumberInput tooltipText="Normalaus skrandžio peristaltika yra +- 5k/min." bind:value={$stomachStore.peristalsis} title="Peristaltika, k/min" />
+			<NumberInput tooltipText="Normali skrandžio peristaltika yra +- 5k/min." bind:value={$stomachStore.peristalsis} title="Peristaltika, k/min" />
 		</div>
 
 		<Textarea

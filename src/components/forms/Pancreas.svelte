@@ -22,7 +22,7 @@
 			<RadioBtn bind:group={$pancreasStore.echogen} value="hiperechogeniška" name="echogenicity" />
 		</div>
 
-		<NumberInput bind:value={$pancreasStore.width} tooltipText="Normalaus kasos latako skersmuo katėms yra 0.1cm, šunims- 0.06cm. Latako skersmuo, kuris galėtų indikuoti obstrukciją: 0.4-0.5cm. Senatvinis pakitimas katėms- kasos latako išsiplėtimas iki 0.25cm." title="Kasos latako plotis, cm" />
+		<NumberInput bind:value={$pancreasStore.width} tooltipText="Normalus kasos latako skersmuo katėms yra 0.1cm, šunims- 0.06cm. Latako skersmuo, kuris galėtų indikuoti obstrukciją: 0.4-0.5cm. Senatvinis pakitimas katėms- kasos latako išsiplėtimas iki 0.25cm." title="Kasos latako plotis, cm" />
 		<Textarea
 			title="Kiti pakitimai"
 			bind:value={$pancreasStore.otherChanges}

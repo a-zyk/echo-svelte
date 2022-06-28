@@ -13,7 +13,7 @@
 		<div class="font-bold text-md text-center mb-2">Kairys inkstas</div>
 		<div class="flex gap-2">
 		<div class="titles">Inksto žievė lyginant su blužnimi yra</div>
-		<Tooltip tooltipText="Normalaus kairio inksto žievė yra hipoechoiška blužniai."/>
+		<Tooltip tooltipText="Normali kairio inksto žievė yra hipoechoiška blužniai."/>
 	</div>
 		<div class="radio">
 			<RadioBtn bind:group={$kidneyLStore.echogenL} value="izoechogeniška" name="echogenicityL" />
@@ -23,7 +23,7 @@
 
 		<div class="flex gap-5">
 			<NumberInput
-				tooltipText="Normalaus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
+				tooltipText="Normalus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
 				bind:value={$kidneyLStore.lng}
 				title="Inksto ilgis, cm"
 			/>
@@ -56,7 +56,7 @@
 		<div class="font-bold text-md text-center mt-5 mb-2">Dešinys inkstas</div>
 		<div class="flex gap-2">
 		<div class="titles">Inksto žievė lyginant su kepenimis yra</div>
-		<Tooltip tooltipText="Normalaus dešinio inksto žievė yra hipoechoiška/izoechoiška kepenims."/>
+		<Tooltip tooltipText="Normali dešinio inksto žievė yra hipoechoiška/izoechoiška kepenims."/>
 	</div>
 		<div class="radio">
 			<RadioBtn bind:group={$kidneyRStore.echogenR} value="izoechogeniška" name="echogenicityR" />
@@ -66,12 +66,12 @@
 
 		<div class="flex gap-5">
 			<NumberInput
-				tooltipText="Normalaus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
+				tooltipText="Normalus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
 				bind:value={$kidneyRStore.lngR}
 				title="Inksto ilgis, cm"
 			/>
 			<NumberInput
-				tooltipText="Normalaus katės inksto plotis 2.23 - 2.83 cm."
+				tooltipText="Normalus katės inksto plotis 2.23 - 2.83 cm."
 				bind:value={$kidneyRStore.widthR}
 				title="Inksto plotis, cm"
 			/>

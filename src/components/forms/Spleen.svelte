@@ -11,7 +11,7 @@
 	<div slot="content">
 		<div class="flex gap-2">
 			<div class="titles">Blužnies parenchima</div>
-			<Tooltip tooltipText="Normalios blužnies parenchima yra homogeniška." />
+			<Tooltip tooltipText="Normali blužnies parenchima yra homogeniška." />
 		</div>
 		<div class="radio">
 			<RadioBtn bind:group={$spleenStore.echogen} value="homogeniška" name="echogenicity" />
@@ -19,7 +19,7 @@
 		</div>
 		<div class="flex gap-2">
 			<div class="titles">Blužnies parenchima lyginant su kepenimis</div>
-			<Tooltip tooltipText="Normali blužnys yra hiperechogeniška lyginant su kepenimis." />
+			<Tooltip tooltipText="Normali blužnis yra hiperechogeniška lyginant su kepenimis." />
 		</div>
 		<div class="radio">
 			<RadioBtn bind:group={$spleenStore.comToLiver} value="izoechogeniška" name="toLiver" />

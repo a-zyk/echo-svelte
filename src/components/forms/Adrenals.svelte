@@ -1,5 +1,8 @@
 <script>
-	import { adrenalsL as adrenalsLStore, adrenalsR as adrenalsRStore } from '../../stores/description';
+	import {
+		adrenalsL as adrenalsLStore,
+		adrenalsR as adrenalsRStore
+	} from '../../stores/description';
 	import Toggle from '../../components/Toggle.svelte';
 	import RadioBtn from '../../components/RadioBtn.svelte';
 	import NumberInput from '../../components/NumberInput.svelte';
@@ -7,7 +10,7 @@
 	import Tooltip from '../../components/Tooltip.svelte';
 </script>
 
-<Toggle autoclosable=true classes="card">
+<Toggle autoclosable="true" classes="card">
 	<div slot="title">Prieinksčiai</div>
 	<div slot="content">
 		<div class="font-bold text-md text-center mb-2">Kairys prieinkstis</div>
@@ -20,7 +23,11 @@
 		<div class="radio">
 			<RadioBtn bind:group={$adrenalsLStore.echogen} value="izoechogeniška" name="echogenicityL" />
 			<RadioBtn bind:group={$adrenalsLStore.echogen} value="hipoechogeniška" name="echogenicityL" />
-			<RadioBtn bind:group={$adrenalsLStore.echogen} value="hiperechogeniška" name="echogenicityL" />
+			<RadioBtn
+				bind:group={$adrenalsLStore.echogen}
+				value="hiperechogeniška"
+				name="echogenicityL"
+			/>
 		</div>
 
 		<NumberInput
@@ -57,7 +64,11 @@
 		<div class="radio">
 			<RadioBtn bind:group={$adrenalsRStore.echogen} value="izoechogeniška" name="echogenicityL" />
 			<RadioBtn bind:group={$adrenalsRStore.echogen} value="hipoechogeniška" name="echogenicityL" />
-			<RadioBtn bind:group={$adrenalsRStore.echogen} value="hiperechogeniška" name="echogenicityL" />
+			<RadioBtn
+				bind:group={$adrenalsRStore.echogen}
+				value="hiperechogeniška"
+				name="echogenicityL"
+			/>
 		</div>
 
 		<NumberInput

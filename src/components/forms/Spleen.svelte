@@ -6,7 +6,7 @@
 	import Tooltip from '../../components/Tooltip.svelte';
 </script>
 
-<Toggle autoclosable=true classes="card">
+<Toggle autoclosable="true" classes="card">
 	<div slot="title">Blužnis</div>
 	<div slot="content">
 		<div class="flex gap-2">

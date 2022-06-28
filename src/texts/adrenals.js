@@ -1,5 +1,5 @@
 export const NORMAL_ADRENALS_TEXT = `Normalūs prieinksčiai yra hipoechoiški juos supantiems rebalams, gali turėti hiperechoišką linija tarp žievės ir šerdies, hiperechoiška šerdį. Karysis prieinkstis yra pupelės arba žemės riešuto formas, dešinysis V formos, dažnai geriau matomas kaudalinis polius. Skersai prieinkstį eina v.phrenicoabdominalis, kuri nustatoma spalviniu dopleriu, taip pat čia yra dažna piktybinių prieinksčių auglių invazijos vieta.`
-export const NORMAL_ADRENaLS_DESCR_R = `Dešinysis prieinkstis.`
+export const NORMAL_ADRENALS_DESCR_R = `Dešinysis prieinkstis.`
 export const NORMAL_ADRENaLS_DESCR_L = `Kairysis prieinkstis.`
 
 export const HYPERADRENO_TEXT = `Dėl hipofizės navikų kylančio hiperadrenokorticizmo, vystosi prieinksčių hiperplazija, abu prieinksčiai vienodai padidėję. Hiperadrenokorticizmas gali išsivystit dėl hormoniškai aktyvios prieinksčių neoplazijos (maždaug 20% visų HAC atvejų). Tokiu atveju, vienas prieinkstis didėja, galimai randama masė. Kitas prieinkstis ženkliai mažėja (ilgis mažesnis nei 0.5cm).`

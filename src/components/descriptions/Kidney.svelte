@@ -1,29 +1,63 @@
 <script>
-	import { kidney } from '../../stores/description';
+	import { kidneyL, kidneyR } from '../../stores/description';
 </script>
 
-<div>
-	{#if $kidney.echogen}
-		<span> Inksto žievė kepenims yra {$kidney.echogen}.</span>
-	{/if}
+<div class="mb-2">
+	<div>
+		{#if JSON.stringify($kidneyL) !== "{}"}
+			<span>Kairys inkstas-</span>
+		{/if}
+		{#if $kidneyL.echogenL}
+			<span> Inksto žievė blužniai yra {$kidneyL.echogenL}.</span>
+		{/if}
 
-	{#if $kidney.lng && $kidney.width}
-		<span>Inksto dydis {$kidney.lng}x{$kidney.width} cm.</span>
-	{:else if $kidney.lng}
-		<span>Inksto ilgis {$kidney.lng} cm.</span>
-	{:else if $kidney.width}
-		<span>Inksto plotis {$kidney.width} cm.</span>
-	{/if}
+		{#if $kidneyL.lngL && $kidneyL.widthL}
+			<span>Inksto dydis {$kidneyL.lngL}x{$kidneyL.widthL} cm.</span>
+		{:else if $kidneyL.lngL}
+			<span>Inksto ilgis {$kidneyL.lngL} cm.</span>
+		{:else if $kidneyL.widthL}
+			<span>Inksto plotis {$kidneyL.widthL} cm.</span>
+		{/if}
 
-	{#if $kidney.pelvicWidth}
-		<span>Geldelė {$kidney.pelvicWidth}.</span>
-	{/if}
+		{#if $kidneyL.pelvicWidthL}
+			<span>Geldelė {$kidneyL.pelvicWidthL}.</span>
+		{/if}
 
-	{#if $kidney.pelvisCm}
-		<span>Geldelės plotis skersiniame pjūvyje {$kidney.pelvisCm} cm.</span>
-	{/if}
+		{#if $kidneyL.pelvisCmL}
+			<span>Geldelės plotis skersiniame pjūvyje {$kidneyL.pelvisCmL} cm.</span>
+		{/if}
 
-	{#if $kidney.otherChanges}
-		<span>{$kidney.otherChanges}.</span>
-	{/if}
+		{#if $kidneyL.otherChangesL}
+			<span>{$kidneyL.otherChangesL}.</span>
+		{/if}
+	</div>
+
+	<div>
+		{#if JSON.stringify($kidneyR) !== "{}"}
+			<span>Dešinys inkstas-</span>
+		{/if}
+		{#if $kidneyR.echogenR}
+			<span> Inksto žievė kepenims yra {$kidneyR.echogenR}.</span>
+		{/if}
+
+		{#if $kidneyR.lngR && $kidneyR.widthR}
+			<span>Inksto dydis {$kidneyR.lngR}x{$kidneyR.widthR} cm.</span>
+		{:else if $kidneyR.lngR}
+			<span>Inksto ilgis {$kidneyR.lngR} cm.</span>
+		{:else if $kidneyR.widthR}
+			<span>Inksto plotis {$kidneyR.widthR} cm.</span>
+		{/if}
+
+		{#if $kidneyR.pelvicWidthR}
+			<span>Geldelė {$kidneyR.pelvicWidthR}.</span>
+		{/if}
+
+		{#if $kidneyR.pelvisCmR}
+			<span>Geldelės plotis skersiniame pjūvyje {$kidneyR.pelvisCmR} cm.</span>
+		{/if}
+
+		{#if $kidneyR.otherChangesR}
+			<span>{$kidneyR.otherChangesR}.</span>
+		{/if}
+	</div>
 </div>

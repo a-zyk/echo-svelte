@@ -22,7 +22,7 @@
 <div class="container">
 <div class="flex gap-5 relative">
 	<div class="flex flex-col w-1/2 gap-5">
-		<Bladder />
+		<Bladder show=true />
 		<Kidney />
 		<Spleen />
 		<Liver />
@@ -35,7 +35,7 @@
 
 
 	<div class="card flex flex-col w-1/2 sticky top-0 self-start">
-		<div class="font-bold text-lg text-center">Echoskopijos aprašymas</div>
+		<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
 		<div contenteditable="true">
 			<BladderDescription />
 			<KidneyDescription />

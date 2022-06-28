@@ -2,7 +2,7 @@
 	import { gallB } from '../../stores/description';
 </script>
 
-<div>
+<div class="mb-2">
 	{#if $gallB.wallThickness}
 		<span> Tulžies pūslės sienelė yra {$gallB.wallThickness}.</span>
 	{/if}

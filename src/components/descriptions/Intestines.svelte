@@ -2,6 +2,7 @@
     import {intestines} from "../../stores/description"
 </script>
 
+<div class="mb-2">
 {#if $intestines.thicknessDuo}
 <span>Dvylikapirštės žarnos sienelės storis yra {$intestines.thicknessDuo} cm.</span>
 {/if}
@@ -30,6 +31,7 @@
 <span>Storosios žarnos sienelės yra {$intestines.thicknessCol} cm.</span>
 {/if}
 
-{#if $intestines.otherChangesCec}
-<span>{$intestines.otherChangesCec}.</span>
+{#if $intestines.otherChangesCol}
+<span>{$intestines.otherChangesCol}.</span>
 {/if}
+</div>

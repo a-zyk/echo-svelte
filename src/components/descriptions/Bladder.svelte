@@ -2,7 +2,7 @@
 	import { bladder } from '../../stores/description';
 </script>
 
-<div>
+<div class="mb-2">
 	{#if $bladder.wallThickness}
 		<span> Šlapimo pūslės sienelė {$bladder.wallThickness}.</span>
 	{/if}

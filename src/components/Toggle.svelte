@@ -7,7 +7,14 @@
 
 	export let classes;
 	export let autoclosable = false;
-	let show = false;
+	export let initialState = false;
+
+	let show = initialState;
+
+	if (initialState) {
+		$active = id;
+	}
+
 	function toggle() {
 		show = !show;
 

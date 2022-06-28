@@ -4,10 +4,10 @@
 	import RadioBtn from '../../components/RadioBtn.svelte';
 	import NumberInput from '../../components/NumberInput.svelte';
 	import Textarea from '../../components/Textarea.svelte';
-	
+	export let show = false;
 </script>
 
-<Toggle autoclosable=true classes="card">
+<Toggle autoclosable=true classes="card" initialState={show}>
 	<div slot="title">Šlapimo pūslė</div>
 
 	<div slot="content">

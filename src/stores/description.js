@@ -2,7 +2,8 @@ import { writable } from 'svelte/store';
 
 export const bladder = writable({});
 
-export const kidney = writable({});
+export const kidneyL = writable({});
+export const kidneyR = writable({});
 
 export const spleen = writable({});
 
@@ -16,4 +17,6 @@ export const intestines = writable({});
 
 export const pancreas = writable({});
 
-export const adrenals = writable({});
+export const adrenalsL = writable({});
+
+export const adrenalsR = writable({});

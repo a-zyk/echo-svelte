@@ -2,7 +2,7 @@
 	import { stomach } from '../../stores/description';
 </script>
 
-<div>
+<div class="mb-2">
 	{#if $stomach.content === 'tusčias'}
 		<span>Skrandyje turinio nėra</span>
 	{:else if $stomach.content === 'vidutiniškai prisipildęs'}

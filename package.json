@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"build": "svelte-kit build && type nul > build/.nojekyll && type nul > build/CNAME && echo aprasyk.lt > build/CNAME",
 		"deploy": "node ./gh-pages.js",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",

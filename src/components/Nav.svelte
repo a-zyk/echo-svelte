@@ -4,7 +4,7 @@
 	let navItems = [
 		{ name: 'Apie', link: '/' },
 		{ name: 'Aprašymas', link: '/description' },
-		{ name: 'Dažnesnių patologijų aprašymai', link: '/test' }
+		{ name: 'Dažnesnių patologijų aprašymai', link: '/pathologies' }
 	];
 
 	const ACTIVE_CLASSES = 'border-black border-b-2 font-bold';

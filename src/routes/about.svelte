@@ -6,7 +6,7 @@
 <div class="card max-w-lg">
 	<p>
 		Labas! Šis projektas yra skirtas sukurti echoskopijos aprašymo pagrindą. Tikiuosi tai padės
-		pagerinti echoskopijos aprašymo techiniką bei pagreitins veterinaro darbą. Sugeneruotą tekstą galite kopijuoti ar toliau
+		pagerinti echoskopijos aprašymo techniką bei pagreitins veterinaro darbą. Sugeneruotą tekstą galite kopijuoti ar toliau
 		naudoti/redaguoti kaip jums patinka. Projekta kūriau, kaip mokymosi priemonę. 
 	</p>
     <p>Informacijos

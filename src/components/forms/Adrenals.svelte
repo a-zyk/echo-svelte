@@ -29,7 +29,7 @@
 			title="Prieinksčio ilgis, cm"
 		/>
 
-		<div class="flex gap-5">
+		<div class=" flex-col md:flex-row flex gap-5">
 			<NumberInput
 				bind:value={$adrenalsLStore.widthFront}
 				tooltipText="Normalus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."
@@ -66,7 +66,7 @@
 			title="Prieinksčio ilgis, cm"
 		/>
 
-		<div class="flex gap-5">
+		<div class=" flex-col md:flex-row flex gap-5">
 			<NumberInput
 				bind:value={$adrenalsRStore.widthFront}
 				tooltipText="Normalaus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."

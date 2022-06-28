@@ -12,5 +12,6 @@
     <p>Informacijos
 		šaltinis: Atlas of small animal ultrasonography 2nd edition by Dominique Penninck, Marc-André
 		d’Anjou.</p>
+		<p>Jei pastebėjote klaidų ar turite pasiulymų susisiekite aprasykecho@gmail.com</p>
 </div>
 </div>

@@ -21,7 +21,7 @@
 			<RadioBtn bind:group={$kidneyLStore.echogenL} value="hiperechogeniška" name="echogenicityL" />
 		</div>
 
-		<div class="flex gap-5">
+		<div class="flex-col md:flex-row flex gap-5">
 			<NumberInput
 				tooltipText="Normalus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
 				bind:value={$kidneyLStore.lng}
@@ -64,7 +64,7 @@
 			<RadioBtn bind:group={$kidneyRStore.echogenR} value="hiperechogeniška" name="echogenicityR" />
 		</div>
 
-		<div class="flex gap-5">
+		<div class="flex  flex-col md:flex-row gap-5">
 			<NumberInput
 				tooltipText="Normalus katės inksto ilgis 3.20 - 4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
 				bind:value={$kidneyRStore.lngR}

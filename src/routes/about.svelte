@@ -7,7 +7,7 @@
 		<p class="mb-2">
 			Labas! Šis projektas yra skirtas sukurti echoskopijos aprašymo pagrindą. Tikiuosi tai padės
 			pagerinti echoskopijos aprašymo techniką bei pagreitins veterinaro darbą. Sugeneruotą tekstą
-			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekta kūriau, kaip mokymosi
+			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projektą kūriau, kaip mokymosi
 			priemonę.
 		</p>
 		<p class="mb-2">

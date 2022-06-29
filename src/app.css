@@ -23,6 +23,6 @@ input[type='number'] {
 }
 
 .paws {
-    background-image: url('images/paws.png');
+    background-image: url('/images/paws.png');
     @apply w-full h-full fixed z-0 left-0 right-0 opacity-[.04];
 }

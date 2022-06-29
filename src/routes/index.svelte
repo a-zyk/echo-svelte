@@ -19,7 +19,6 @@
 	import AdrenalsDescription from '../components/descriptions/Adrenals.svelte';
 	import NormSelection from '../components/NormSelection.svelte';
 	import NormShow from '../components/NormShow.svelte';
-
 </script>
 
 <div class="container">
@@ -35,10 +34,10 @@
 			<Pancreas />
 			<Adrenals />
 		</div>
-
+		<!-- dogSmall="hello im small" dogMedium="Hello I am big" dogLarge="I am large" -->
 		<div class="flex flex-col w-1/2 sticky top-0 self-start">
-			<!-- <NormSelection /> -->
-
+			<NormSelection />
+			<div><NormShow dog="default" dogSmall="ima smallz" cat="bye" /></div>
 			<div class="card">
 				<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
 				<div contenteditable="true">

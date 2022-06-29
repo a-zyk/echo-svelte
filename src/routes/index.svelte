@@ -36,8 +36,6 @@
 		</div>
 		<!-- dogSmall="hello im small" dogMedium="Hello I am big" dogLarge="I am large" -->
 		<div class="flex flex-col w-1/2 sticky top-0 self-start">
-			<NormSelection />
-			<div><NormShow dog="default" dogSmall="ima smallz" cat="bye" /></div>
 			<div class="card">
 				<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
 				<div contenteditable="true">
@@ -50,8 +48,17 @@
 					<IntestinesDescription />
 					<PancreasDescription />
 					<AdrenalsDescription />
+					<div class="text-xs">
+						<!-- <NormShow
+							cat="n-normalus dydis, išmatavimų normų šaltinis: Atlas of small animal ultrasonography 2nd edition by Dominique
+					Penninck, Marc-André d’Anjou"
+							dog="n-normalus dydis, išmatavimų normų šaltinis: Atlas of small animal ultrasonography 2nd edition by Dominique
+					Penninck, Marc-André d’Anjou"
+						/> -->
+					</div>
 				</div>
 			</div>
+			<!-- <NormSelection /> -->
 		</div>
 	</div>
 </div>

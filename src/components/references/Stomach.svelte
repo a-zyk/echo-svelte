@@ -31,9 +31,9 @@
 			<div slot="content">
 				<Modal
 					src="/images/stomach/pyloric_hiper_suo_sust_musc.png"
-					text={TXT.STOMACH_NORMAL_DESCR}
+					text={TXT.STOMACH_HYPERTR_DESCR}
 				/>
-				{TXT.STOMACH_NORMAL_TEXT}
+				{TXT.STOMACH_HYPERTR_DESCR}
 			</div>
 		</Toggle>
 

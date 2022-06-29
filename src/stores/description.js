@@ -20,3 +20,5 @@ export const pancreas = writable({});
 export const adrenalsL = writable({});
 
 export const adrenalsR = writable({});
+
+export const norms = writable({});

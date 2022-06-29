@@ -38,4 +38,7 @@
 >
 <!-- End Google Tag Manager (noscript) -->
 <Nav />
-<slot />
+<div class="paws" />
+<div class="relative">
+	<slot />
+</div>

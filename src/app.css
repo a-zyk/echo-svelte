@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {font-family: 'Noto Sans', sans-serif;}
-
-.card {
-    @apply rounded-lg shadow-md p-4 bg-white border-gray-200 border;
+body {
+	font-family: 'Noto Sans', sans-serif;
 }
 
-input[type="number"] {
-    @apply text-sm px-4 py-2 border border-gray-300 rounded-lg;
+.card {
+	@apply rounded-lg shadow-md p-4 bg-white border-gray-200 border;
+}
+
+input[type='number'] {
+	@apply text-sm px-4 py-2 border border-gray-300 rounded-lg;
 }
 
 .radio {
-    @apply items-center mb-4 gap-2 flex flex-wrap;
+	@apply items-center mb-4 gap-2 flex flex-wrap;
 }
 
 .titles {
-    @apply font-semibold mb-2;
+	@apply font-semibold mb-2;
 }
 
-
+.paws {
+    background-image: url('images/paws.png');
+    @apply w-full h-full fixed z-0 left-0 right-0 opacity-[.04];
+}

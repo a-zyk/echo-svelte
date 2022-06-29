@@ -17,36 +17,42 @@
 	import PancreasDescription from '../components/descriptions/Pancreas.svelte';
 	import Adrenals from '../components/forms/Adrenals.svelte';
 	import AdrenalsDescription from '../components/descriptions/Adrenals.svelte';
+	import NormSelection from '../components/NormSelection.svelte';
+	import NormShow from '../components/NormShow.svelte';
+
 </script>
 
 <div class="container">
-<div class="flex gap-5 relative">
-	<div class="flex flex-col w-1/2 gap-5">
-		<Bladder show=true />
-		<Kidney />
-		<Spleen />
-		<Liver />
-		<Gall />
-		<Stomach />
-		<Intestines />
-		<Pancreas />
-		<Adrenals />
-	</div>
+	<div class="flex gap-5 relative">
+		<div class="flex flex-col w-1/2 gap-5">
+			<Bladder show="true" />
+			<Kidney />
+			<Spleen />
+			<Liver />
+			<Gall />
+			<Stomach />
+			<Intestines />
+			<Pancreas />
+			<Adrenals />
+		</div>
 
+		<div class="flex flex-col w-1/2 sticky top-0 self-start">
+			<!-- <NormSelection /> -->
 
-	<div class="card flex flex-col w-1/2 sticky top-0 self-start">
-		<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
-		<div contenteditable="true">
-			<BladderDescription />
-			<KidneyDescription />
-			<SpleenDescription />
-			<LiverDescription />
-			<GallBDescription />
-			<StomachDescription />
-			<IntestinesDescription />
-			<PancreasDescription />
-			<AdrenalsDescription />
+			<div class="card">
+				<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
+				<div contenteditable="true">
+					<BladderDescription />
+					<KidneyDescription />
+					<SpleenDescription />
+					<LiverDescription />
+					<GallBDescription />
+					<StomachDescription />
+					<IntestinesDescription />
+					<PancreasDescription />
+					<AdrenalsDescription />
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 </div>

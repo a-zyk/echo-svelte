@@ -15,7 +15,7 @@
 	<div slot="content">
 		<div class="font-bold text-md text-center mb-2">Kairys prieinkstis</div>
 		<div class="flex gap-2">
-			<div class="titles ">aplinkui esantiems riebalams prieinksčio žievė</div>
+			<div class="titles ">Aplinkui esantiems riebalams prieinksčio žievė</div>
 			<Tooltip
 				tooltipText="Normalaus prieinksčio žievė jį supantiems riebalams yra hipoechoiška."
 			/>
@@ -56,7 +56,7 @@
 
 		<div class="font-bold text-md text-center mt-5 mb-2">Dešinys prieinkstis</div>
 		<div class="flex gap-2">
-			<div class="titles ">aplinkui esantiems riebalams prieinksčio žievė</div>
+			<div class="titles ">Aplinkui esantiems riebalams prieinksčio žievė</div>
 			<Tooltip
 				tooltipText="Normalaus prieinksčio žievė jį supantiems riebalams yra hipoechoiška."
 			/>

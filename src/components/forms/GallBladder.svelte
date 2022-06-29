@@ -13,7 +13,7 @@
 		<div class="flex gap-2">
 			<div class="titles">Tulžies pūslės sienelė</div>
 			<Tooltip
-				tooltipText="Normalios tulžies pūslės sienelės storis katėms ir šunims yra < 0.1cm."
+				tooltipText="Normalios tulžies pūslės sienelės storis katėms ir šunims yra <0.1cm."
 			/>
 		</div>
 		<div class="radio">

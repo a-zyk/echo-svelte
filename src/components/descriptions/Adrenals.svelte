@@ -1,5 +1,7 @@
 <script>
 	import { adrenalsL, adrenalsR } from '../../stores/description';
+	import * as TXT from '../../texts/adrenals';
+	import NormShow from '../NormShow.svelte'
 </script>
 <div class="mb-2">
 <div >
@@ -11,18 +13,17 @@
 	{/if}
 
 	{#if $adrenalsL.length}
-		<span>Prienksčio ilgis {$adrenalsL.length} cm.</span>
+		<span>Prienksčio ilgis {$adrenalsL.length}cm<NormShow cat={TXT.LENGHT_CAT} dog={TXT.LENGHT_DOG}/>.</span>
 	{/if}
 
 	{#if $adrenalsL.widthFront && $adrenalsL.widthBack}
 		<span
-			>Priekinio poliaus plotis {$adrenalsL.widthFront} cm., galinio poliaus plotis {$adrenalsL.widthBack}
-			cm.</span
+			>Priekinio poliaus plotis {$adrenalsL.widthFront}cm, galinio poliaus plotis {$adrenalsL.widthBack}cm<NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span
 		>
 	{:else if $adrenalsL.widthFront}
-		<span>Priekinio poliaus plotis {$adrenalsL.widthFront} cm.</span>
+		<span>Priekinio poliaus plotis {$adrenalsL.widthFront}cm<NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span>
 	{:else if $adrenalsL.widthBack}
-		<span>Galinio poliaus plotis {$adrenalsL.widthBack} cm.</span>
+		<span>Galinio poliaus plotis {$adrenalsL.widthBack}cm<NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span>
 	{/if}
 
 	{#if $adrenalsL.otherChanges}
@@ -39,18 +40,17 @@
 	{/if}
 
 	{#if $adrenalsR.length}
-		<span>Prienksčio ilgis {$adrenalsR.length} cm.</span>
+		<span>Prienksčio ilgis {$adrenalsR.length}cm <NormShow cat={TXT.LENGHT_CAT} dog={TXT.LENGHT_DOG}/>.</span>
 	{/if}
 
 	{#if $adrenalsR.widthFront && $adrenalsR.widthBack}
 		<span
-			>Priekinio poliaus plotis {$adrenalsR.widthFront} cm., galinio poliaus plotis {$adrenalsR.widthBack}
-			cm.</span
+			>Priekinio poliaus plotis {$adrenalsR.widthFront}cm, galinio poliaus plotis {$adrenalsR.widthBack}cm <NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span
 		>
 	{:else if $adrenalsR.widthFront}
-		<span>Priekinio poliaus plotis {$adrenalsR.widthFront} cm.</span>
+		<span>Priekinio poliaus plotis {$adrenalsR.widthFront}cm <NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span>
 	{:else if $adrenalsR.widthBack}
-		<span>Galinio poliaus plotis {$adrenalsR.widthBack} cm.</span>
+		<span>Galinio poliaus plotis {$adrenalsR.widthBack}cm <NormShow cat={TXT.WIDTH_CAT} dog={TXT.WIDTH_DOG}/>.</span>
 	{/if}
 
 	{#if $adrenalsR.otherChanges}

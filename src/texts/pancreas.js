@@ -12,3 +12,7 @@ export const ABSCESS_DESCR = `Katė, kasos abscesas.`
 
 export const NEOPLASIA_TEXT = `Kasos endokrininio audinio neoplazijos (glukagonomos, insulinomos ir gastrinomos) yra nedažnas reiškinys. Šunims dažniausiai pasitaiko insulinomos. Matomos kaip masės kasos skiltyse. Kasos adenocarcinoma retas vėžys, šunims gali būti nustatomas kaip masė ar difuziški pakitimai, katėms dažniausiai difuziškai apimantis visą kasą.`
 export const NEOPLASIA_DESCR = `Šuo, kasos karcinoma.`
+
+export const DUCTUS_CAT = " (n- 0.1cm)"
+
+export const DUCTUS_DOG = " (n- 0.06cm)"

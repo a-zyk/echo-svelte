@@ -27,7 +27,7 @@
 		</div>
 
 		<NumberInput
-			tooltipText="Normalus šlapimo pūslės sienelės storis: katėms ≤ 0,17 cm,šunims ≤ 0,3 cm."
+			tooltipText="Normalus šlapimo pūslės sienelės storis: katėms ≤0.17 cm, šunims ≤0.3 cm."
 			bind:value={$bladderStore.thickness}
 			title="Sienelės storis, cm"
 		/>

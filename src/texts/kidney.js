@@ -38,5 +38,14 @@ export const LYMPHOMA_KIDNEY_DESCRIPTION = `Katė, renalinė limfoma. Būdingas 
 
 export const CARCINOMA_KIDNEY_TEXT = `Iš inksto parenchimos kylantys augliai, antri pagal dažnumą katėms, po renalinės limfomos.`
 export const CARCINOMA_KIDNEY_DESCRIPTION = `Šuo, renalinė karcinoma.`
+ 
+ export const LENGTH_CAT = " (n- 3.20-4.12cm)"
 
+ export const LENGTH_WIDTH_CAT = " (n- 3.20-4.12cm x 2.23-2.83cm)"
+
+ export const WIDTH_CAT = " (n- 2.23-2.83cm)"
+
+ export const PELVIS_CAT = " (n- 0.2cm)"
+
+ export const PELVIS_DOG = " (n- 0.2cm)"
 

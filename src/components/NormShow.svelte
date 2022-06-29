@@ -1,7 +1,7 @@
 <script>
 	import { norms } from '../stores/description';
 
-	export let dog;
+	export let dog= "";
 	export let dogSmall = dog;
 	export let dogMedium = dog;
 	export let dogLarge = dog;

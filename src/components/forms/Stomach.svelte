@@ -29,7 +29,7 @@
 			/>
 
 			<NumberInput
-				tooltipText="Normali skrandžio peristaltika yra +- 5k/min."
+				tooltipText="Normali skrandžio peristaltika yra +-5k/min."
 				bind:value={$stomachStore.peristalsis}
 				title="Peristaltika, k/min"
 			/>

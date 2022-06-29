@@ -1,5 +1,7 @@
 <script>
 	import { kidneyL, kidneyR } from '../../stores/description';
+	import * as TXT from '../../texts/kidney';
+	import NormShow from '../NormShow.svelte';
 </script>
 
 <div class="mb-2">
@@ -12,11 +14,11 @@
 		{/if}
 
 		{#if $kidneyL.lngL && $kidneyL.widthL}
-			<span>Inksto dydis {$kidneyL.lngL}x{$kidneyL.widthL} cm.</span>
+			<span>Inksto ilgis ir plotis {$kidneyL.lngL}x{$kidneyL.widthL}cm<NormShow cat={TXT.LENGTH_WIDTH_CAT}/>.</span>
 		{:else if $kidneyL.lngL}
-			<span>Inksto ilgis {$kidneyL.lngL} cm.</span>
+			<span>Inksto ilgis {$kidneyL.lngL}cm<NormShow cat={TXT.LENGTH_CAT}/>.</span>
 		{:else if $kidneyL.widthL}
-			<span>Inksto plotis {$kidneyL.widthL} cm.</span>
+			<span>Inksto plotis {$kidneyL.widthL}cm<NormShow cat={TXT.WIDTH_CAT}/>.</span>
 		{/if}
 
 		{#if $kidneyL.pelvicWidthL}
@@ -24,7 +26,7 @@
 		{/if}
 
 		{#if $kidneyL.pelvisCmL}
-			<span>Geldelės plotis skersiniame pjūvyje {$kidneyL.pelvisCmL} cm.</span>
+			<span>Geldelės plotis skersiniame pjūvyje {$kidneyL.pelvisCmL}cm<NormShow cat={TXT.PELVIS_CAT} dog={TXT.PELVIS_DOG}/>.</span>
 		{/if}
 
 		{#if $kidneyL.otherChangesL}
@@ -41,11 +43,11 @@
 		{/if}
 
 		{#if $kidneyR.lngR && $kidneyR.widthR}
-			<span>Inksto dydis {$kidneyR.lngR}x{$kidneyR.widthR} cm.</span>
+			<span>Inksto ilgis ir plotis {$kidneyR.lngR}x{$kidneyR.widthR}cm<NormShow cat={TXT.LENGTH_WIDTH_CAT}/>.</span>
 		{:else if $kidneyR.lngR}
-			<span>Inksto ilgis {$kidneyR.lngR} cm.</span>
+			<span>Inksto ilgis {$kidneyR.lngR}cm<NormShow cat={TXT.LENGTH_CAT}/>.</span>
 		{:else if $kidneyR.widthR}
-			<span>Inksto plotis {$kidneyR.widthR} cm.</span>
+			<span>Inksto plotis {$kidneyR.widthR}cm<NormShow cat={TXT.WIDTH_CAT}/>.</span>
 		{/if}
 
 		{#if $kidneyR.pelvicWidthR}
@@ -53,7 +55,7 @@
 		{/if}
 
 		{#if $kidneyR.pelvisCmR}
-			<span>Geldelės plotis skersiniame pjūvyje {$kidneyR.pelvisCmR} cm.</span>
+			<span>Geldelės plotis skersiniame pjūvyje {$kidneyR.pelvisCmR}cm <NormShow cat={TXT.PELVIS_CAT} dog={TXT.PELVIS_DOG}/>.</span>
 		{/if}
 
 		{#if $kidneyR.otherChangesR}

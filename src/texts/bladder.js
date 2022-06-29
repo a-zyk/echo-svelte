@@ -19,3 +19,7 @@ export const BLADDER_CARCINOMA_DESCRIPTION = `Pereinamojo epitelio karcinoma api
 
 export const BLADDER_MEZENCHYMAL_TEXT = `Retesni dariniai kylantys iš pūslės sienelės sluoksnių: periferinių nervų dangalų navikai, leiomiosarkoma, leiomioma, fibroma, fibrosarkoma, hemangioma, hemangiosarkoma, limfoma, mastocitoma.`
 export const BLADDER_MEZENCHYMAL_DESCRIPTION = `Šuo, leiomiosarkoma.`
+
+export const THICKNESS_CAT = " (n- ≤17cm)"
+
+export const THICKNESS_DOG = " (n- ≤0.3 cm)"

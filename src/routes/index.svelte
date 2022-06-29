@@ -21,7 +21,7 @@
 	import NormShow from '../components/NormShow.svelte';
 </script>
 
-<div class="container">
+<div class="container mb-5">
 	<div class="flex gap-5 relative">
 		<div class="flex flex-col w-1/2 gap-5">
 			<Bladder show="true" />
@@ -34,8 +34,8 @@
 			<Pancreas />
 			<Adrenals />
 		</div>
-		<!-- dogSmall="hello im small" dogMedium="Hello I am big" dogLarge="I am large" -->
-		<div class="flex flex-col w-1/2 sticky top-0 self-start">
+		
+		<div class=" gap-5 flex flex-col w-1/2 sticky top-0 self-start">
 			<div class="card">
 				<div class="font-bold text-lg text-center mb-2">Echoskopijos aprašymas</div>
 				<div contenteditable="true">
@@ -49,16 +49,16 @@
 					<PancreasDescription />
 					<AdrenalsDescription />
 					<div class="text-xs">
-						<!-- <NormShow
+						 <NormShow
 							cat="n-normalus dydis, išmatavimų normų šaltinis: Atlas of small animal ultrasonography 2nd edition by Dominique
 					Penninck, Marc-André d’Anjou"
 							dog="n-normalus dydis, išmatavimų normų šaltinis: Atlas of small animal ultrasonography 2nd edition by Dominique
 					Penninck, Marc-André d’Anjou"
-						/> -->
+						/> 
 					</div>
 				</div>
 			</div>
-			<!-- <NormSelection /> -->
+			<NormSelection /> 
 		</div>
 	</div>
 </div>

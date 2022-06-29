@@ -1,5 +1,7 @@
 <script>
 	import { gallB } from '../../stores/description';
+	import * as TXT from '../../texts/gallBladder';
+	import NormShow from '../NormShow.svelte';
 </script>
 
 <div class="mb-2">
@@ -8,7 +10,7 @@
 	{/if}
 
 	{#if $gallB.thickness}
-		<span>Sienelės storis yra {$gallB.thickness} cm.</span>
+		<span>Sienelės storis yra {$gallB.thickness}cm<NormShow dog={TXT.WALL_DOG} cat={TXT.WALL_CAT}/>.</span>
 	{/if}
 
 	{#if $gallB.ductus}
@@ -16,7 +18,7 @@
 	{/if}
 
 	{#if $gallB.ductusCm}
-		<span>Bendrojo tulžies pūslės latako plotis skersiniame pjūvyje yra {$gallB.ductusCm} cm.</span>
+		<span>Bendrojo tulžies pūslės latako plotis skersiniame pjūvyje yra {$gallB.ductusCm}cm<NormShow dog={TXT.DUCTUS_DOG} cat={TXT.DUCTUS_CAT}/>.</span>
 	{/if}
 
 	{#if $gallB.otherChanges}

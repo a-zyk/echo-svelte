@@ -1,9 +1,9 @@
 import{S as I,i as S,s as q,e as p,t as f,k as P,c,a as u,h as b,d as n,m as E,b as m,g as w,G as i,E as v}from"../chunks/index-f3157f53.js";function J(D){let t,a,s,k,h,e,g,j,o,y;return{c(){t=p("div"),a=p("div"),s=p("p"),k=f(`Labas! \u0160is projektas yra skirtas sukurti echoskopijos apra\u0161ymo pagrind\u0105. Tikiuosi tai pad\u0117s
 			pagerinti echoskopijos apra\u0161ymo technik\u0105 bei pagreitins veterinaro darb\u0105. Sugeneruot\u0105 tekst\u0105
-			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekta k\u016Briau, kaip mokymosi
+			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekt\u0105 k\u016Briau, kaip mokymosi
 			priemon\u0119.`),h=P(),e=p("p"),g=f(`Informacijos \u0161altinis: Atlas of small animal ultrasonography 2nd edition by Dominique
 			Penninck, Marc-Andr\xE9 d\u2019Anjou.`),j=P(),o=p("p"),y=f("Jei pasteb\u0117jote klaid\u0173 ar turite pasiulym\u0173 susisiekite aprasykecho@gmail.com"),this.h()},l(l){t=c(l,"DIV",{class:!0});var d=u(t);a=c(d,"DIV",{class:!0});var r=u(a);s=c(r,"P",{class:!0});var _=u(s);k=b(_,`Labas! \u0160is projektas yra skirtas sukurti echoskopijos apra\u0161ymo pagrind\u0105. Tikiuosi tai pad\u0117s
 			pagerinti echoskopijos apra\u0161ymo technik\u0105 bei pagreitins veterinaro darb\u0105. Sugeneruot\u0105 tekst\u0105
-			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekta k\u016Briau, kaip mokymosi
+			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekt\u0105 k\u016Briau, kaip mokymosi
 			priemon\u0119.`),_.forEach(n),h=E(r),e=c(r,"P",{class:!0});var x=u(e);g=b(x,`Informacijos \u0161altinis: Atlas of small animal ultrasonography 2nd edition by Dominique
 			Penninck, Marc-Andr\xE9 d\u2019Anjou.`),x.forEach(n),j=E(r),o=c(r,"P",{class:!0});var A=u(o);y=b(A,"Jei pasteb\u0117jote klaid\u0173 ar turite pasiulym\u0173 susisiekite aprasykecho@gmail.com"),A.forEach(n),r.forEach(n),d.forEach(n),this.h()},h(){m(s,"class","mb-2"),m(e,"class","mb-2"),m(o,"class","mb-2"),m(a,"class","card max-w-lg"),m(t,"class","w-full flex items-center justify-center mt-36")},m(l,d){w(l,t,d),i(t,a),i(a,s),i(s,k),i(a,h),i(a,e),i(e,g),i(a,j),i(a,o),i(o,y)},p:v,i:v,o:v,d(l){l&&n(t)}}}class M extends I{constructor(t){super(),S(this,t,null,J,q,{})}}export{M as default};

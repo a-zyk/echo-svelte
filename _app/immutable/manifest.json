@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ccfccead.js",
+    "file": "start-ed44ee16.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-282394bb.js",
+    "file": "pages/about.svelte-6fb5ddaf.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -57,7 +57,7 @@
     ]
   },
   "src/routes/pathologies.svelte": {
-    "file": "pages/pathologies.svelte-d4afed96.js",
+    "file": "pages/pathologies.svelte-c065b2c4.js",
     "src": "src/routes/pathologies.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

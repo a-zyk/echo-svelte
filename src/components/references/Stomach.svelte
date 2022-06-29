@@ -33,7 +33,7 @@
 					src="/images/stomach/pyloric_hiper_suo_sust_musc.png"
 					text={TXT.STOMACH_HYPERTR_DESCR}
 				/>
-				{TXT.STOMACH_HYPERTR_DESCR}
+				{TXT.STOMACH_HYPERTR_TEXT}
 			</div>
 		</Toggle>
 

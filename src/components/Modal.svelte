@@ -14,7 +14,7 @@
 	}}
 	{src}
 	alt=""
-	class="w-20 cursor-pointer"
+	class="w-20 cursor-zoom-in"
 />
 
 {#if expanded}
@@ -22,7 +22,7 @@
 
 	<div class="w-screen h-screen top-0 left-0 fixed z-20 flex justify-center items-center">
 		<div class="relative w-5/12  bg-white p-5">
-			<img {src} alt="" class="w-full " />
+			<img  {src} alt="" class="w-full " />
 			{text}
 			<div
 				class="absolute top-0 right-0 flex items-center justify-center cursor-pointer bg-white rounded-full w-8 h-8"

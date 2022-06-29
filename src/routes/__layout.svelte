@@ -26,6 +26,12 @@
 		})(window, document, 'script', 'dataLayer', 'GTM-MKCKMHL');
 	</script>
 	<!-- End Google Tag Manager -->
+	<meta property="og:url"                content="https://aprasyk.lt" />
+	<meta property="og:type"               content="application" />
+	<meta property="og:title"              content="Aprašyk.lt" />
+	<meta property="og:description"        content="Sukurk echoskopijos aprašymą čia." />
+	<meta property="og:image"              content="https://aprasyk.lt/images/og.png" />
+
 </svelte:head>
 <!-- Google Tag Manager (noscript) -->
 <noscript

@@ -51,7 +51,7 @@
 		<Textarea
 			title="Kiti pakitimai"
 			bind:value={$adrenalsLStore.otherChanges}
-			placeholder="masės, citos, kalcifikatai"
+			placeholder="masės, kalcifikatai"
 		/>
 
 		<div class="font-bold text-md text-center mt-5 mb-2">Dešinys prieinkstis</div>
@@ -92,7 +92,7 @@
 		<Textarea
 			title="Kiti pakitimai"
 			bind:value={$adrenalsRStore.otherChanges}
-			placeholder="masės, citos, kalcifikatai"
+			placeholder="masės, kalcifikatai"
 		/>
 	</div>
 </Toggle>

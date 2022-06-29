@@ -28,7 +28,7 @@
 		<Textarea
 			title="Kiti pakitimai"
 			bind:value={$pancreasStore.otherChanges}
-			placeholder=" masės, citos, kalcifikatai"
+			placeholder=" masės, cistos, kalcifikatai"
 		/>
 	</div>
 </Toggle>

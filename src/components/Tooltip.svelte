@@ -1,7 +1,5 @@
 <script>
 	export let tooltipText;
-
-	import { fade } from 'svelte/transition';
 	import { createPopperActions } from 'svelte-popperjs';
 
 	const [popperRef, popperContent] = createPopperActions({

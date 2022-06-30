@@ -13,6 +13,6 @@ export const STOMACH_LEI_DESCR= `Šuo, leiomioma.`;
 export const STOMACH_CARC_TEXT = `Skrandžio adenocarcinoma yra reta katėms, bet šunims sudaro 42-72% visų nustatomų skrandžio vėžių. Amžiaus vidurkis 8 metai, bet pasireiškia ir jaunesniems nei 5 metai. Dvigubai dažniau nustatoma patinams. Predisponuotos veislės: belgų aviganiai, šiukščiaplaukiai koliai. Ultragarsu stebimas sienelės sustorėjimas, sluoksnų suardymas. Dažniausiai sienelės išorinis ir vidinis sluoksnis hipoechoiškas, su hiperechoiška centrine zona. Gali būti išopėjimo, limfadenopatija, auglys dažniausiai randamas mažojoje skrandžio kreivėje bei prievarčio prieangio (antrum) zonoje.`;
 export const STOMACH_CARC_DESCR = `Šuo, adenokarcinoma. Matomi pseudosluoksniai.`;
 
-export const WALL_WIDTH_CAT = " (n- 0.2-0.4cm)";
+export const WALL_WIDTH_CAT = " (n~ 0.2-0.4cm)";
 
-export const WALL_WIDTH_DOG = " (n- 0.2-0.5cm)"
+export const WALL_WIDTH_DOG = " (n~ 0.2-0.5cm)"

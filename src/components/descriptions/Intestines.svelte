@@ -14,7 +14,7 @@
 	{/if}
 
 	{#if $intestines.thicknessJeju}
-		<span>Tusčiosios žarnos sienelės storis yra {$intestines.thicknessJeju}cm<NormShow cat={TXT.JEJU_CAT} dogSmall={TXT.JEJU_DOG_SM} dogMedium={TXT.JEJU_DOG_MD} dogLarge={TXT.JEJU_DOG_LG}/>.</span>
+		<span>Tuščiosios žarnos sienelės storis yra {$intestines.thicknessJeju}cm<NormShow cat={TXT.JEJU_CAT} dogSmall={TXT.JEJU_DOG_SM} dogMedium={TXT.JEJU_DOG_MD} dogLarge={TXT.JEJU_DOG_LG}/>.</span>
 	{/if}
 
 	{#if $intestines.otherChangesJeju}
@@ -23,7 +23,7 @@
 
 	{#if $intestines.thicknessCec}
 		<span
-			>Aklosios žarnos sienelės storis ties ileocekaline jungtimi yra {$intestines.thicknessCec}cm<NormShow cat={TXT.CEC_CAT} dogSmall={TXT.CEC_DOG_SM} dogMedium={TXT.CEC_DOG_MD} dogLarge={TXT.CEC_DOG_LG}/>.</span
+			>Klubinės žarnos sienelės storis ties ileocekaline jungtimi yra {$intestines.thicknessCec}cm<NormShow cat={TXT.CEC_CAT} dogSmall={TXT.CEC_DOG_SM} dogMedium={TXT.CEC_DOG_MD} dogLarge={TXT.CEC_DOG_LG}/>.</span
 		>
 	{/if}
 

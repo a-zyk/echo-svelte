@@ -23,12 +23,12 @@
 
 		<div class="flex-col md:flex-row flex gap-5">
 			<NumberInput
-				tooltipText="Normalus katės inksto ilgis 3.20-4.12cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
+				tooltipText="Normalus katės inksto ilgis ~3-4.5cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms."
 				bind:value={$kidneyLStore.lngL}
 				title="Inksto ilgis, cm"
 			/>
 			<NumberInput
-				tooltipText="Normalaus katės inksto plotis 2.23-2.83cm."
+				tooltipText="Normalaus katės inksto plotis ~2.23-2.83cm."
 				bind:value={$kidneyLStore.widthL}
 				title="Inksto plotis, cm"
 			/>
@@ -42,7 +42,7 @@
 		</div>
 
 		<NumberInput
-			tooltipText="Skersiniame pjūvyje normalus geldelės plotis iki 0.2cm. Plotis >1.3cm būdingas obstrukcijai."
+			tooltipText="Skersiniame pjūvyje normalus geldelės plotis ≤0.2cm. Plotis >1.3cm būdingas obstrukcijai."
 			bind:value={$kidneyLStore.pelvisCmL}
 			title="Geldelės plotis skersiniame pjūvyje, cm"
 		/>
@@ -66,12 +66,12 @@
 
 		<div class="flex  flex-col md:flex-row gap-5">
 			<NumberInput
-				tooltipText="Normalus katės inksto ilgis 3.20-4.12 cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
+				tooltipText="Normalus katės inksto ilgis ~3-4.5cm. Didesnis pas nekastruotus katinus, mažesnis senoms katėms. Normalus šuns inksto ilgis priklauso nuo šuns dydžio."
 				bind:value={$kidneyRStore.lngR}
 				title="Inksto ilgis, cm"
 			/>
 			<NumberInput
-				tooltipText="Normalus katės inksto plotis 2.23-2.83 cm."
+				tooltipText="Normalus katės inksto plotis ~2.23-2.83 cm."
 				bind:value={$kidneyRStore.widthR}
 				title="Inksto plotis, cm"
 			/>
@@ -85,7 +85,7 @@
 		</div>
 
 		<NumberInput
-			tooltipText="Skersiniame pjūvyje normalus geldelės plotis iki 0.2cm. Plotis >1.3cm būdingas obstrukcijai."
+			tooltipText="Skersiniame pjūvyje normalus geldelės plotis ≤0.2cm. Plotis >1.3cm būdingas obstrukcijai."
 			bind:value={$kidneyRStore.pelvisCmR}
 			title="Geldelės plotis skersiniame pjūvyje, cm"
 		/>

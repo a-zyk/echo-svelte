@@ -22,4 +22,3 @@ export const BLADDER_MEZENCHYMAL_DESCRIPTION = `Šuo, leiomiosarkoma.`
 
 export const THICKNESS_CAT = " (n- ≤17cm)"
 
-export const THICKNESS_DOG = " (n- ≤0.3 cm)"

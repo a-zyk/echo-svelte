@@ -35,7 +35,7 @@
 		</div>
 
 		<NumberInput
-			tooltipText="Normalus tulžies pūslės latako skersmuo yra iki 0.4cm katėms ir 0.3cm šunims."
+			tooltipText="Normalus tulžies pūslės latako skersmuo yra ≤0.4cm katėms ir ≤0.3cm šunims."
 			bind:value={$gallBStore.ductusCm}
 			title=" Bendrojo tulžies latako skersmuo, cm"
 		/>

@@ -10,7 +10,7 @@
 	{/if}
 
 	{#if $bladder.thickness}
-		<span>Sienelės storis yra {$bladder.thickness}cm<NormShow dog={TXT.THICKNESS_DOG} cat={TXT.THICKNESS_CAT}/>.</span>
+		<span>Sienelės storis yra {$bladder.thickness}cm<NormShow cat={TXT.THICKNESS_CAT}/>.</span>
 	{/if}
 
 	{#if $bladder.otherChanges}

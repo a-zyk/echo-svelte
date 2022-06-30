@@ -32,19 +32,19 @@
 
 		<NumberInput
 			bind:value={$adrenalsLStore.length}
-			tooltipText="Normalus prieinksčio ilgis katėms yra 1-1.1cm, šunims: 1-5cm."
+			tooltipText="Normalus prieinksčio ilgis katėms yra ~1-1.1cm, šunims: ~1-5cm."
 			title="Prieinksčio ilgis, cm"
 		/>
 
 		<div class=" flex-col md:flex-row flex gap-5">
 			<NumberInput
 				bind:value={$adrenalsLStore.widthFront}
-				tooltipText="Normalus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."
+				tooltipText="Normalus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title="Priekinio poliaus plotis, cm"
 			/>
 			<NumberInput
 				bind:value={$adrenalsLStore.widthBack}
-				tooltipText="Normalus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."
+				tooltipText="Normalus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title=" Galinio poliaus plotis, cm"
 			/>
 		</div>
@@ -73,19 +73,19 @@
 
 		<NumberInput
 			bind:value={$adrenalsRStore.length}
-			tooltipText="Normalaus prieinksčio ilgis katėms yra 1-1.1cm, šunims: 1-5cm."
+			tooltipText="Normalaus prieinksčio ilgis katėms yra ~1-1.1cm, šunims: ~1-5cm."
 			title="Prieinksčio ilgis, cm"
 		/>
 
 		<div class=" flex-col md:flex-row flex gap-5">
 			<NumberInput
 				bind:value={$adrenalsRStore.widthFront}
-				tooltipText="Normalaus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."
+				tooltipText="Normalaus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title="Priekinio poliaus plotis, cm"
 			/>
 			<NumberInput
 				bind:value={$adrenalsRStore.widthBack}
-				tooltipText="Normalaus prieinksčio plotis katėms yra 0.35-0.45cm , šunims: 0.6-0.8cm."
+				tooltipText="Normalaus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title=" Galinio poliaus plotis, cm"
 			/>
 		</div>

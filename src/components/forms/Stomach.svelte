@@ -23,7 +23,7 @@
 
 		<div class=" flex-col md:flex-row flex gap-5">
 			<NumberInput
-				tooltipText="Normalus skrandžio sienelės storis katei yra 0.2-0.4cm, šunims 0.2-0.5cm."
+				tooltipText="Normalus skrandžio sienelės storis katei yra ~0.2-0.4cm, šunims ~0.2-0.5cm."
 				bind:value={$stomachStore.thickness}
 				title="Sienelės storis, cm"
 			/>

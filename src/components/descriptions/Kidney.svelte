@@ -1,7 +1,15 @@
 <script>
-	import { kidneyL, kidneyR } from '../../stores/description';
+	import { kidneyL, kidneyR, lymphnodes} from '../../stores/description';
 	import * as TXT from '../../texts/kidney';
 	import NormShow from '../NormShow.svelte';
+	$: sizes = $lymphnodes.lumbarRen
+		.map((lumbarRen) => {
+			if (lumbarRen.length && lumbarRen.width) {
+				return `${lumbarRen.length}x${lumbarRen.width}cm.`;
+			}
+		})
+		.filter((size) => size)
+		.join(', ');
 </script>
 
 <div class="mb-2">
@@ -62,4 +70,35 @@
 			<span>{$kidneyR.otherChangesR}.</span>
 		{/if}
 	</div>
+		<!-- limfmazgis -->
+		{#if $lymphnodes.numberLumbarRenal === 1 && $lymphnodes.sizeLumbarRenal}
+		<span>Stebimas 1 {$lymphnodes.sizeLumbarRenal}s juosmeninės aortos/inkstinis limfinis mazgas.</span>
+	{:else if $lymphnodes.numberLumbarRenal && $lymphnodes.sizeLumbarRenal}
+		<span
+			>Stebimi {$lymphnodes.numberLumbarRenal}
+			{$lymphnodes.sizeLumbarRenal} juosmeninės aortos/inkstiniai limfiniai mazgai.</span
+		>
+	{:else if $lymphnodes.numberLumbarRenal === 1}
+		<span>Stebimas 1 juosmeninės aortos/inkstinis limfinis mazgas.</span>
+	{:else if $lymphnodes.numberLumbarRenal}
+		<span>Stebimi {$lymphnodes.numberLumbarRenal} juosmeninės aortos/inkstiniai limfiniai mazgai.</span>
+	{/if}
+
+	{#if $lymphnodes.echogenLumbarRenal && $lymphnodes.numberLumbarRenal > 1}
+		<span>Juosmeninės aortos/inkstinių lm. parenchima yra {$lymphnodes.echogenLumbarRenal} juos supantiems riebalams.</span
+		>
+	{:else if $lymphnodes.echogenLumbarRenal}
+		<span
+			>Juosmeninės aortos/inkstinio lm. parenchima yra {$lymphnodes.echogenLumbarRenal} ją supantiems riebalams.</span
+		>
+	{/if}
+
+	{#if sizes}
+		<span>Ilgis ir plotis {sizes}</span>
+	{/if}
+
+	{#if $lymphnodes.otherChangesLumbarRenal}
+		<span>{$lymphnodes.otherChangesLumbarRenal}</span>
+	{/if}
+	<!-- limfmazgis -->
 </div>

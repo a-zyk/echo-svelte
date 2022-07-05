@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="flex gap-2">
-			<div class="titles">Blužnies lm. juos supantiems riebalams yra</div>
+			<div class="titles">Blužnies lm. parenchima ją supantiems riebalams yra</div>
 			<Tooltip
 				tooltipText="Normalus limfinis mazgas yra izoechogeniškas/lengvai hipoechogeniškas jį supantiems riebalams. Mazgas gali būti apsuptas hiperechoiškos kapsulės, mazge gali būti stebimos hiperechoiškos linijos, kurios yra kraujagyslių sienelės. Spalvinis dopleris ne visada rodo kraujo tėkmę."
 			/>
@@ -69,7 +69,7 @@
 					<NumberInput
 						tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
 						bind:value={splenic.length}
-						title="Limfinio m. ilgis"
+						title="Limfinio m. ilgis, cm"
 					/>
 					<NumberInput
 						tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
@@ -81,14 +81,14 @@
 			<button
 				on:click={addLympnode}
 				class="bg-gray-500 active:bg-blue-500 cursor-pointer text-white text-xs font-bold py-1 px-2 rounded"
-				>add</button
+				>+</button
 			>
 
 			{#if $lymphnodesStore.splenic.length > 1}
 				<button
 					on:click={removeLympnode}
 					class="bg-gray-500 active:bg-blue-500 cursor-pointer text-white text-xs font-bold py-1 px-2 rounded"
-					>remove</button
+					>−</button
 				>
 			{/if}
 		</div>

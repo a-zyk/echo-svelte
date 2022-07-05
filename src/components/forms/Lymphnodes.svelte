@@ -8,6 +8,7 @@
 	import MedIliac from './lymphnodes/MedialIliac.svelte';
 	import InternalIliac from './lymphnodes/InternalIliac.svelte';
 	import Sacral from './lymphnodes/Sacral.svelte';
+	import Stomach from "./lymphnodes/Stomach.svelte"
 	import Toggle from '../Toggle.svelte';
 </script>
 
@@ -15,10 +16,11 @@
 	<div slot="title">Limfiniai mazgai</div>
 	<div class="gap-2 flex flex-col" slot="content">
 		<div class="titles">Visceraliniai limfiniai mazgai</div>
-		<Hepatic />
 		<Splenic />
-		<Jejunal />
+		<Hepatic />
+		<Stomach/>
 		<PancreaticoDuodenal />
+		<Jejunal />
 		<Colic />
 		<div class="titles">Parietaliniai limfiniai mazgai</div>
 		<LumbarRenal />

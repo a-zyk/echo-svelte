@@ -30,6 +30,14 @@ export const lymphnodes = writable({
     hepatic: [{}],
     splenic: [{}],
     stomach: [{}],
+    jejunal: [{}],
+    stomach: [{}],
+    pancrDuo: [{}],
+    colic: [{}],
+    lumbarRen: [{}],
+    iliacInt: [{}],
+    iliacMed: [{}],
+    sacral: [{}],
 });
 
 export const norms = writable({});

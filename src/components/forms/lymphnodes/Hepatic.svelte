@@ -9,6 +9,10 @@
 	const addLympnode = () => {
 		$lymphnodesStore.hepatic = [...$lymphnodesStore.hepatic, {}];
 	};
+
+	const removeLympnode = () => {
+		$lymphnodesStore.hepatic = $lymphnodesStore.hepatic.slice(0, -1);
+	};
 </script>
 
 <Toggle classes="card">
@@ -35,7 +39,7 @@
 			</div>
 		</div>
 		<div class="flex gap-2">
-			<div class="titles">Hepatiniai lm. pranechima supantiems riebalams yra</div>
+			<div class="titles">Hepatiniai lm. paranechima supantiems riebalams yra</div>
 			<Tooltip
 				tooltipText="Normalus limfinis mazgas yra izoechogeniškas/lengvai hipoechogeniškas jį supantiems riebalams. Mazgas gali būti apsuptas hiperechoiškos kapsulės, mazge gali būti stebimos hiperechoiškos linijos, kurios yra kraujagyslių sienelės. Spalvinis dopleris ne visada rodo kraujo tėkmę."
 			/>
@@ -65,7 +69,7 @@
 						<NumberInput
 						tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
 						bind:value={hepatic.length}
-						title='Limfinio m. ilgis'
+						title='Limfinio m. ilgis, cm'
 					/>
 						<NumberInput
 							tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
@@ -78,8 +82,16 @@
 				<button
 				on:click={addLympnode}
 				class="bg-gray-500 active:bg-blue-500 cursor-pointer text-white text-xs font-bold py-1 px-2 rounded"
-				>add</button
+				>+</button
 			>
+
+			{#if $lymphnodesStore.hepatic.length > 1}
+				<button
+					on:click={removeLympnode}
+					class="bg-gray-500 active:bg-blue-500 cursor-pointer text-white text-xs font-bold py-1 px-2 rounded"
+					>−</button
+				>
+			{/if}
 			</div>
 			
 		<!-- </div> -->

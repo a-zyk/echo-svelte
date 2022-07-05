@@ -31,7 +31,7 @@
 </script>
 
 <div class={classes}>
-	<div class="flex cursor-pointer text-xl font-bold mt-2 p-3" on:click={toggle}>
+	<div class="flex cursor-pointer text-xl font-bold p-3 items-center" on:click={toggle}>
 		<slot name="title" />
 		<div class="flex flex-grow" />
 		<div class="text-4xl font-bold">
@@ -44,7 +44,7 @@
 	</div>
 
 	{#if show}
-		<div class="p-5" in:fly={{ y: 0, duration: 1000 }} out:fly={{ y: 0, duration: 100 }}>
+		<div class="md:p-5" in:fly={{ y: 0, duration: 1000 }} out:fly={{ y: 0, duration: 0 }}>
 			<slot name="content" />
 		</div>
 	{/if}

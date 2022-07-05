@@ -4,10 +4,10 @@
 	import * as TXT from '../../texts/intestines';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 	<div class="text-center" slot="title">Žarnynas</div>
 	<div slot="content">
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Invaginacija</div>
 			<div slot="content">
 				<Modal src="/images/intestines/intususeption_dog.png" text={TXT.INVAGINATION_DESCR} />
@@ -15,7 +15,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Limfoma/IBD</div>
 			<div slot="content">
 				<Modal src="/images/intestines/kate_limfosarkoma.png" text={TXT.LYMOHOMA_DESCR} />

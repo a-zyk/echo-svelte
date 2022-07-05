@@ -4,10 +4,10 @@
 	import * as TXT from '../../texts/bladder.js';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 	<div class="text-center" slot="title">Šlapimo pūslė</div>
 	<div slot="content">
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Normali šlapimo pūslė</div>
 			<div slot="content">
 				<Modal
@@ -18,7 +18,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Cistitas</div>
 			<div slot="content">
 				<Toggle>
@@ -70,7 +70,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Neoplazijos</div>
 			<div slot="content">
 				<Toggle>

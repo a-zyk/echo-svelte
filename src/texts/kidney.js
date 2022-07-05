@@ -45,7 +45,7 @@ export const CARCINOMA_KIDNEY_DESCRIPTION = `Šuo, renalinė karcinoma.`
 
  export const WIDTH_CAT = " (n~ 2.23-2.83cm)"
 
- export const PELVIS_CAT = " (n~ 0.2cm)"
+ export const PELVIS_CAT = " (n- <0.2cm)"
 
- export const PELVIS_DOG = " (n~ 0.2cm)"
+ export const PELVIS_DOG = " (n- <0.2cm)"
 

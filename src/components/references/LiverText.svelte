@@ -4,10 +4,10 @@
 	import * as TXT from '../../texts/liver';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 	<div class="text-center" slot="title">Kepenys ir tulžies pūslė</div>
 	<div slot="content">
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Normalios kepenys</div>
 			<div slot="content">
 				<Modal src="/images/liver/normalliver.png" text={TXT.HEALTHY_LIVER_DESCRIPTION} />
@@ -15,7 +15,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Difuziniai kepenų prenchimos pakitimai</div>
 			<div slot="content">
 				<div class="flex gap-1">
@@ -40,7 +40,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Lokalizuoti kepenų prenchimos pakitimai</div>
 			<div slot="content">
 				<div class="flex gap-1">

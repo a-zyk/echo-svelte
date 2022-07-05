@@ -4,10 +4,10 @@
 	import * as TXT from '../../texts/adrenals';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 	<div class="text-center" slot="title">Prieinksčiai</div>
 	<div slot="content">
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Normalūs prieinksčiai</div>
 			<div slot="content">
 				<div class="flex">
@@ -24,7 +24,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Hiperadrenokorticizmas</div>
 			<div slot="content">
 				<Modal src="/images/adrenals/hiperplazija_kušingas.png" text={TXT.HYPERADRENO_DESCR} />
@@ -32,7 +32,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Neoplazija</div>
 			<div slot="content">
 				<Modal src="/images/adrenals/pheochromocitoma.png" text={TXT.NEOPLASIA_DESCR} />

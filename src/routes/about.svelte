@@ -3,7 +3,7 @@
 </script>
 
 <div class="w-full flex items-center justify-center mt-36">
-	<div class=" card max-w-lg">
+	<div class=" px-2 py-3 card max-w-lg">
 		<p class="mb-2">
 			Labas! Šis projektas yra skirtas sukurti echoskopijos aprašymo pagrindą. Tikiuosi tai padės
 			pagerinti echoskopijos aprašymo techniką bei pagreitins veterinaro darbą. Sugeneruotą tekstą

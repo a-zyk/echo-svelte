@@ -4,11 +4,11 @@
 	import * as TXT from '../../texts/spleen';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 <div class="text-center" slot="title">Blužnis</div>
 <div slot="content">
 
-    <Toggle classes="card mt-4">
+    <Toggle classes="card mt-2">
         <div slot="title">Normali blužnis</div>
         <div slot="content">
             <Modal src="/images/spleen/normalibluzniskate.png" text={TXT.HEALTHY_SPLEEN_DESCR} />
@@ -17,7 +17,7 @@
         </div>
     </Toggle>
 
-    <Toggle classes="card mt-4">
+    <Toggle classes="card mt-2">
         <div slot="title">Splenomegalija</div>
         <div slot="content">
             <Toggle>
@@ -41,7 +41,7 @@
         </div>
     </Toggle>
 
-    <Toggle classes="card mt-4">
+    <Toggle classes="card mt-2">
         <div slot="title">Lokalūs parenchimos pakitimai</div>
         <div slot="content">
             <Modal src="/images/spleen/mielolipoma.png" text={TXT.LOCAL_PARENCHYMAL_DISEASE_DESCR} />
@@ -51,7 +51,7 @@
         </div>
     </Toggle>
 
-    <Toggle classes="card mt-4">
+    <Toggle classes="card mt-2">
         <div slot="title">Hemangiosarkoma ir hematoma</div>
         <div slot="content">
             <Modal src="/images/spleen/hemangiosarkoma.png" text={TXT.GENER_PARENCHYMAL_DISEASE_DESCR} />

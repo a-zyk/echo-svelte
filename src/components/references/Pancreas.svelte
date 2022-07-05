@@ -4,10 +4,10 @@
 	import * as TXT from '../../texts/pancreas';
 </script>
 
-<Toggle autoclosable=true classes="card mt-4">
+<Toggle autoclosable=true classes="card mt-2">
 	<div class="text-center" slot="title">Kasa</div>
 	<div slot="content">
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Senatviniai pakitimai</div>
 			<div slot="content">
 				<Toggle>
@@ -31,7 +31,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Pankreatitas</div>
 			<div slot="content">
 				<Modal src="/images/pancreas/pankreatitas_suo.png" text={TXT.PANCREATITIS_DESCR} />
@@ -39,7 +39,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Abscesai ir cistos</div>
 			<div slot="content">
 				<Modal src="/images/pancreas/kasos_abscesas_kate.png" text={TXT.ABSCESS_DESCR} />
@@ -47,7 +47,7 @@
 			</div>
 		</Toggle>
 
-		<Toggle classes="card mt-4">
+		<Toggle classes="card mt-2">
 			<div slot="title">Neoplazija</div>
 			<div slot="content">
 				<Modal src="/images/pancreas/kasos_karcinoma_suo.png" text={TXT.NEOPLASIA_DESCR} />

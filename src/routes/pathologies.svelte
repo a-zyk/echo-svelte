@@ -23,5 +23,5 @@
 	
 	Šaltiniai:  Atlas of small animal ultrasonography 2nd edition by Dominique
 	Penninck, Marc-André d’Anjou, 
-	<a href="https://vsso.org/home/#home-dog" target="_blank">The Veterinary Society of Surgical Oncology </a>
+	<a class="text-blue-600" href="https://vsso.org/home/#home-dog" target="_blank">The Veterinary Society of Surgical Oncology. </a>
 </div>

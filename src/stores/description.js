@@ -21,4 +21,16 @@ export const adrenalsL = writable({});
 
 export const adrenalsR = writable({});
 
+export const femaleTractL = writable({});
+export const femaleTractR = writable({});
+export const uterus = writable({});
+
+
+export const lymphnodes = writable({
+    hepatic: [{}],
+    splenic: [{}],
+    stomach: [{}],
+});
+
 export const norms = writable({});
+

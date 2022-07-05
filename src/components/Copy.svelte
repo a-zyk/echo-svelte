@@ -33,7 +33,7 @@ use:popperRef	on:click={copy}>Kopijuoti</button
 
 {#if showTooltip}
 	<div
-		class="relative z-20 bg-slate-500 py-1 px-2 text-white rounded-md max-w-sm"
+		class="relative text-xs z-20 bg-slate-500 py-1 px-2 text-white rounded-md max-w-sm"
 		id="tooltip"
 		use:popperContent={extraOpts}
 	>

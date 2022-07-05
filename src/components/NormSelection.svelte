@@ -3,7 +3,7 @@
 	import RadioBtn from '../components/RadioBtn.svelte';
 </script>
 
-<div class="card">
+<div class="card py-2">
 <div class=" cursor-pointer flex items-center ">
 	<input class="cursor-pointer" bind:checked={$norms.show} type="checkbox" id="norm" />
 	<label class="cursor-pointer ml-2" for="norm">Rodyti normas aprašyme</label>

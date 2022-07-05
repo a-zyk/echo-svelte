@@ -8,6 +8,7 @@
 	import IntestinesDescription from './Intestines.svelte';
 	import PancreasDescription from './Pancreas.svelte';
 	import AdrenalsDescription from './Adrenals.svelte';
+	import FemaleDescription from './Female.svelte';
 </script>
 
 <BladderDescription />
@@ -18,4 +19,5 @@
 <StomachDescription />
 <IntestinesDescription />
 <PancreasDescription />
+<FemaleDescription/>
 <AdrenalsDescription />

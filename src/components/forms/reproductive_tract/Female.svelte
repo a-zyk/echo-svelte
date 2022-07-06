@@ -15,7 +15,7 @@
 	<div slot="title">Patelės lytinė sistema</div>
 	<div slot="content">
 
-		<div class="mb-2">
+		<div class="mb-3">
 		<div class="font-bold text-md text-center mb-2">Gimda</div>
 		<Textarea
 		title="Kiti pakitimai"

@@ -31,7 +31,7 @@
 </script>
 
 <div class={classes}>
-	<div class="flex cursor-pointer text-xl font-bold p-3 items-center" on:click={toggle}>
+	<div class="flex cursor-pointer text-xl font-bold px-3 pt-3 items-center" on:click={toggle}>
 		<slot name="title" />
 		<div class="flex flex-grow" />
 		<div class="text-4xl font-bold">

@@ -5,15 +5,33 @@
 	import AllDescriptions from '../components/descriptions/All.svelte';
 	import Copy from '../components/Copy.svelte';
 	let descriptionElement;
+	let descriptionHidden = false;
+	const hideDescription = () => {
+		descriptionHidden = true;
+	}
+
+	const showDescription = () => {
+		descriptionHidden = false;
+	}
 </script>
 
-<div class="container mb-5">
+<div class="container  mb-5">
+
+	<div class="flex flex-row gap-10 mb-2 justify-between md:hidden">
+		<button class="bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded" on:click={hideDescription}>Kurti aprašymą</button>
+
+		<button class="bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded" on:click={showDescription}>Sugeneruotas aprašymas</button>
+	</div>
+
 	<div class="flex gap-5 relative">
-		<div class="flex flex-col w-1/2 gap-2">
+		<!-- forma -->
+		<div class="{descriptionHidden ? '' : 'hidden md:flex'} flex w-full flex-col md:w-1/2 gap-2">
 			<AllForms />
 		</div>
+		<!-- forma -->
 
-		<div class=" gap-5 flex flex-col w-1/2 sticky top-0 self-start">
+		<!-- Aprasymas -->
+		<div class="{descriptionHidden ? 'hidden md:flex' : ''} flex w-full gap-5 flex-col md:w-1/2 sticky top-0 self-start">
 			<div class="p-2 card">
 				<div contenteditable="true">
 					<div bind:this={descriptionElement}>
@@ -38,5 +56,6 @@
 
 			<NormSelection />
 		</div>
+		<!-- aprasymas -->
 	</div>
 </div>

@@ -1,9 +1,9 @@
 <script>
-	import { stomach as stomachStore } from '../../stores/description';
-	import Toggle from '../../components/Toggle.svelte';
-	import RadioBtn from '../../components/RadioBtn.svelte';
-	import NumberInput from '../../components/NumberInput.svelte';
-	import Textarea from '../../components/Textarea.svelte';
+	import { stomach as stomachStore } from '../../../stores/description';
+	import Toggle from '../../Toggle.svelte';
+	import RadioBtn from '../../RadioBtn.svelte';
+	import NumberInput from '../../NumberInput.svelte';
+	import Textarea from '../../Textarea.svelte';
 </script>
 
 <Toggle autoclosable="true" classes="card">

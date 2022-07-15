@@ -25,6 +25,9 @@ export const femaleTractL = writable({});
 export const femaleTractR = writable({});
 export const uterus = writable({});
 
+export const maleTractL = writable({});
+export const maleTractR = writable({});
+export const prostate = writable({});
 
 export const lymphnodes = writable({
     hepatic: [{}],

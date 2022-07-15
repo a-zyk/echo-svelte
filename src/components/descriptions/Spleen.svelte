@@ -40,7 +40,7 @@
 		>
 	{:else if $lymphnodes.echogenSplenic}
 		<span
-			>Blužninio limfinio mazgo parenchima yra {$lymphnodes.echogenSplenic} jį supantiems riebalams.</span
+			>Blužninio lm. parenchima yra {$lymphnodes.echogenSplenic} jį supantiems riebalams.</span
 		>
 	{/if}
 

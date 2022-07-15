@@ -2,7 +2,7 @@
 	let src = '../images/waves.jpg';
 </script>
 
-<div class="w-full flex items-center justify-center mt-36">
+<div class="w-full flex items-center justify-center md:mt-36">
 	<div class=" px-2 py-3 card max-w-lg">
 		<p class="mb-2">
 			Labas! Šis projektas yra skirtas sukurti echoskopijos aprašymo pagrindą. Tikiuosi tai padės

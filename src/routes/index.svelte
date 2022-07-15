@@ -1,26 +1,35 @@
 <script>
 	import NormSelection from '../components/NormSelection.svelte';
 	import NormShow from '../components/NormShow.svelte';
-	import AllForms from '../components/forms/All.svelte';
+	import AllForms from '../components/references/forms/All.svelte';
 	import AllDescriptions from '../components/descriptions/All.svelte';
 	import Copy from '../components/Copy.svelte';
 	let descriptionElement;
-	let descriptionHidden = false;
+	let descriptionHidden = true;
 	const hideDescription = () => {
 		descriptionHidden = true;
-	}
+	};
 
 	const showDescription = () => {
 		descriptionHidden = false;
-	}
+	};
 </script>
 
-<div class="container  mb-5">
-
+<div class="container mb-5">
 	<div class="flex flex-row gap-10 mb-2 justify-between md:hidden">
-		<button class="bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded" on:click={hideDescription}>Kurti aprašymą</button>
+		<button
+			class="{descriptionHidden
+				? 'bg-blue-500'
+				: ''} bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded"
+			on:click={hideDescription}>Kurti aprašymą</button
+		>
 
-		<button class="bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded" on:click={showDescription}>Sugeneruotas aprašymas</button>
+		<button
+			class="{descriptionHidden
+				? ''
+				: 'bg-blue-500'} bg-gray-500 active:bg-blue-500 w-1/2 cursor-pointer text-white text-xs font-bold py-2 px-4 rounded"
+			on:click={showDescription}>Sugeneruotas aprašymas</button
+		>
 	</div>
 
 	<div class="flex gap-5 relative">
@@ -31,7 +40,11 @@
 		<!-- forma -->
 
 		<!-- Aprasymas -->
-		<div class="{descriptionHidden ? 'hidden md:flex' : ''} flex w-full gap-5 flex-col md:w-1/2 sticky top-0 self-start">
+		<div
+			class="{descriptionHidden
+				? 'hidden md:flex'
+				: ''} flex w-full gap-5 flex-col md:w-1/2 sticky top-0 self-start"
+		>
 			<div class="p-2 card">
 				<div contenteditable="true">
 					<div bind:this={descriptionElement}>

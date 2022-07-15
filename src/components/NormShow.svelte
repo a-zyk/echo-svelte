@@ -6,7 +6,7 @@
 	export let dogMedium = dog;
 	export let dogLarge = dog;
 
-	export let cat;
+	export let cat="";
 </script>
 
 {#if $norms.show}

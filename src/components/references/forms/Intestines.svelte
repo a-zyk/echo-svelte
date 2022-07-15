@@ -1,8 +1,8 @@
 <script>
-	import { intestines as intestinesStore } from '../../stores/description';
-	import Toggle from '../Toggle.svelte';
-	import NumberInput from '../../components/NumberInput.svelte';
-	import Textarea from '../../components/Textarea.svelte';
+	import { intestines as intestinesStore } from '../../../stores/description';
+	import Toggle from '../../Toggle.svelte';
+	import NumberInput from '../../NumberInput.svelte';
+	import Textarea from '../../Textarea.svelte';
 	
 </script>
 

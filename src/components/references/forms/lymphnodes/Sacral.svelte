@@ -1,80 +1,80 @@
 <script>
-	import Toggle from '../../Toggle.svelte';
-	import RadioBtn from '../../RadioBtn.svelte';
-	import Textarea from '../../Textarea.svelte';
-	import Tooltip from '../../Tooltip.svelte';
-	import NumberInput from '../../NumberInput.svelte';
-	import { lymphnodes as lymphnodesStore } from '../../../stores/description';
+	import Toggle from '../../../Toggle.svelte';
+	import RadioBtn from '../../../RadioBtn.svelte';
+	import Textarea from '../../../Textarea.svelte';
+	import Tooltip from '../../../Tooltip.svelte';
+	import NumberInput from '../../../NumberInput.svelte';
+	import { lymphnodes as lymphnodesStore } from '../../../../stores/description';
 	const addLympnode = () => {
-		$lymphnodesStore.iliacInt = [...$lymphnodesStore.iliacInt, {}];
+		$lymphnodesStore.sacral = [...$lymphnodesStore.sacral, {}];
 	};
 
 	const removeLympnode = () => {
-		$lymphnodesStore.iliacInt = $lymphnodesStore.iliacInt.slice(0, -1);
+		$lymphnodesStore.sacral = $lymphnodesStore.sacral.slice(0, -1);
 	};
 </script>
 
 <Toggle classes="card">
 	<div class="mb-2 flex gap-2 text-base" slot="title">
-		Vidiniai iliakiniai
+		Sakraliniai
 		<Tooltip
-			tooltipText="Normalūs dažniausiai nematomi. Dažna metastazių iš galinės kūno dalies auglių  vieta. Lokalizacija: tarp giliosios cirkumfleksinės ir išorinės iliakinės arteirjų. 
+			tooltipText="Normaliai nematomi, nes uždengia dubens lankas. Matomi tik itin padidėję- dažniausiai dėl metastazių. Lokalizacija: Medialiai vidinei iliakinei arterijai ir išilgai vidurinei sakralinei arterijai. 
             Drenuoja: lyties organus, dubens sritį, galines kojas, šlapimo pūslę ir šlapimtakius.
             "
 		/>
 	</div>
 
 	<div slot="content">
+
 		<div class="flex flex-col md:flex-row md:gap-9">
-			<NumberInput bind:value={$lymphnodesStore.numberInternalIliac} title="Limfinių m. skaičius" />
+			<NumberInput bind:value={$lymphnodesStore.numberSacral} title="Limfinių m. skaičius" />
 			<div>
-				<div class="titles">Vidiniai iliakiniai lm. yra</div>
+				<div class="titles">Sakraliniai lm. yra</div>
 				<div class="radio">
-					<RadioBtn bind:group={$lymphnodesStore.sizeInternalIliac} value="padidėję" name="sizeInternalIliac" />
+					<RadioBtn bind:group={$lymphnodesStore.sizeSacral} value="padidėję" name="sizeSacral" />
 					<RadioBtn
-						bind:group={$lymphnodesStore.sizeInternalIliac}
+						bind:group={$lymphnodesStore.sizeSacral}
 						value="nepadidėję"
-						name="sizeInternalIliac"
+						name="sizeSacral"
 					/>
 				</div>
 			</div>
 		</div>
-
 		<div class="flex gap-2">
-			<div class="titles">Vidinių iliakinių lm. parenchima ją supantiems riebalams yra</div>
+			<div class="titles">Sakralinių lm. parenchima ją supantiems riebalams yra</div>
 			<Tooltip
 				tooltipText="Normalus limfinis mazgas yra izoechogeniškas/lengvai hipoechogeniškas jį supantiems riebalams. Mazgas gali būti apsuptas hiperechoiškos kapsulės, mazge gali būti stebimos hiperechoiškos linijos, kurios yra kraujagyslių sienelės. Spalvinis dopleris ne visada rodo kraujo tėkmę."
 			/>
 		</div>
 		<div class="radio">
 			<RadioBtn
-				bind:group={$lymphnodesStore.echogenInternalIliac}
-				value="izoechogeniški"
+				bind:group={$lymphnodesStore.echogenSacral}
+				value="izoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
-				bind:group={$lymphnodesStore.echogenInternalIliac}
-				value="hipoechogeniški"
+				bind:group={$lymphnodesStore.echogenSacral}
+				value="hipoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
-				bind:group={$lymphnodesStore.echogenInternalIliac}
-				value="hiperechogeniški"
+				bind:group={$lymphnodesStore.echogenSacral}
+				value="hiperechogeniška"
 				name="echogenicity"
 			/>
 		</div>
 
 		<div class="flex-col">
-			{#each $lymphnodesStore.iliacInt as iliacInt, index}
+			{#each $lymphnodesStore.sacral as sacral, index}
 				<div class="flex-col md:flex-row flex gap-5">
 					<NumberInput
 					tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
-					bind:value={iliacInt.length}
+					bind:value={sacral.length}
 					title='Limfinio m. ilgis, cm'
 				/>
 					<NumberInput
 						tooltipText="Normalaus limfmazgio pločio ir ilgio santykis ≤0.5."
-						bind:value={iliacInt.width}
+						bind:value={sacral.width}
 						title='Limfinio m. plotis, cm'
 					/>
 				
@@ -86,7 +86,7 @@
 			>+</button
 		>
 
-		{#if $lymphnodesStore.iliacInt.length > 1}
+		{#if $lymphnodesStore.sacral.length > 1}
 			<button
 				on:click={removeLympnode}
 				class="bg-gray-500 active:bg-blue-500 cursor-pointer text-white text-xs font-bold py-1 px-2 rounded"
@@ -97,7 +97,7 @@
 
 		<Textarea
 			title="Kiti pakitimai"
-			bind:value={$lymphnodesStore.otherChangesInternalIliac}
+			bind:value={$lymphnodesStore.otherChangesSacral}
 			placeholder="masės, kalcifikacijos"
 		/>
 	</div>

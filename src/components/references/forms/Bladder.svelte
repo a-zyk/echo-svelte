@@ -1,9 +1,9 @@
 <script>
-	import { bladder as bladderStore } from '../../stores/description';
-	import Toggle from '../../components/Toggle.svelte';
-	import RadioBtn from '../../components/RadioBtn.svelte';
-	import NumberInput from '../../components/NumberInput.svelte';
-	import Textarea from '../../components/Textarea.svelte';
+	import { bladder as bladderStore } from '../../../stores/description';
+	import Toggle from '../../Toggle.svelte';
+	import RadioBtn from '../../RadioBtn.svelte';
+	import NumberInput from '../../NumberInput.svelte';
+	import Textarea from '../../Textarea.svelte';
 	export let show = false;
 </script>
 

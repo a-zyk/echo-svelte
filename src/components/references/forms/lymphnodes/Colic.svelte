@@ -1,10 +1,10 @@
 <script>
-	import Toggle from '../../Toggle.svelte';
-	import RadioBtn from '../../RadioBtn.svelte';
-	import Textarea from '../../Textarea.svelte';
-	import Tooltip from '../../Tooltip.svelte';
-	import NumberInput from '../../NumberInput.svelte';
-	import { lymphnodes as lymphnodesStore } from '../../../stores/description';
+	import Toggle from '../../../Toggle.svelte';
+	import RadioBtn from '../../../RadioBtn.svelte';
+	import Textarea from '../../../Textarea.svelte';
+	import Tooltip from '../../../Tooltip.svelte';
+	import NumberInput from '../../../NumberInput.svelte';
+	import { lymphnodes as lymphnodesStore } from '../../../../stores/description';
 	const addLympnode = () => {
 		$lymphnodesStore.colic = [...$lymphnodesStore.colic, {}];
 	};

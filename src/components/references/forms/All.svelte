@@ -9,7 +9,8 @@
 	import Pancreas from './Pancreas.svelte';
 	import Adrenals from './Adrenals.svelte';
 	import Lymphnodes from './Lymphnodes.svelte';
-	import Female from "../forms/reproductive_tract/Female.svelte"
+	import Female from "./reproductive_tract/Female.svelte"
+	import Male from "./reproductive_tract/Male.svelte"
 </script>
 
 <Bladder show="true" />
@@ -22,5 +23,6 @@
 <Pancreas />
 <Adrenals />
 <Female/>
+<Male/>
 <Lymphnodes/>
 

@@ -1,14 +1,14 @@
 <script>
-	import Toggle from '../../Toggle.svelte';
-	import RadioBtn from '../../RadioBtn.svelte';
-	import Textarea from '../../Textarea.svelte';
-	import Tooltip from '../../Tooltip.svelte';
-	import NumberInput from '../../NumberInput.svelte';
+	import Toggle from '../../../Toggle.svelte';
+	import RadioBtn from '../../../RadioBtn.svelte';
+	import Textarea from '../../../Textarea.svelte';
+	import Tooltip from '../../../Tooltip.svelte';
+	import NumberInput from '../../../NumberInput.svelte';
 	import {
 		femaleTractL as femaleTractLStore,
 		femaleTractR as femaleTractRStore,
 		uterus as uterusStore
-	} from '../../../stores/description';
+	} from '../../../../stores/description';
 </script>
 
 <Toggle autoclosable="true" classes="card">

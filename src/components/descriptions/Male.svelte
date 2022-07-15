@@ -19,7 +19,10 @@
 
 	{#if $prostate.length && $prostate.width}
 		<span
-			>Prostatos ilgis ir plotis {$prostate.length}x{$prostate.width}cm{#if prostateLenght && prostateWidth}<NormShow dog=" (n< {prostateLenght.toFixed(2)}x{prostateWidth.toFixed(2)}cm)"/>{/if}.</span>
+			>Prostatos ilgis ir plotis {$prostate.length}x{$prostate.width}cm{#if prostateLenght && prostateWidth}<NormShow
+					dog=" (n< {prostateLenght.toFixed(2)}x{prostateWidth.toFixed(2)}cm)"
+				/>{/if}.</span
+		>
 	{:else if $prostate.length}
 		<span>Prostatos ilgis {$prostate.length}cm.</span>
 	{:else if $prostate.width}
@@ -31,7 +34,7 @@
 	{/if}
 </div>
 
-<div>
+<div class="mb-2">
 	{#if JSON.stringify($maleTractL) !== '{}'}
 		<span>Kairė sėklidė-</span>
 	{/if}
@@ -49,7 +52,7 @@
 	{/if}
 </div>
 
-<div>
+<div class="mb-2">
 	{#if JSON.stringify($maleTractR) !== '{}'}
 		<span>Dešinė sėklidė-</span>
 	{/if}

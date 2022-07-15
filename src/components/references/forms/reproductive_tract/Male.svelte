@@ -83,21 +83,20 @@
 			/>
 		</div>
 
-        <div class="mb-4 mt-4">
-		<div class="font-bold text-md text-center mb-2">Kairė sėklidė</div>
+		<div class="mb-4 mt-4">
+			<div class="font-bold text-md text-center mb-2">Kairė sėklidė</div>
 
-		<div class="flex-col md:flex-row flex gap-5">
-			<NumberInput bind:value={$maleTractLStore.length} title="Sėklidės ilgis, cm" />
-			<NumberInput bind:value={$maleTractLStore.width} title="Sėklidės plotis, cm" />
+			<div class="flex-col md:flex-row flex gap-5">
+				<NumberInput bind:value={$maleTractLStore.length} title="Sėklidės ilgis, cm" />
+				<NumberInput bind:value={$maleTractLStore.width} title="Sėklidės plotis, cm" />
+			</div>
+
+			<Textarea
+				title="Kiti pakitimai"
+				bind:value={$maleTractLStore.otherChanges}
+				placeholder="Cistos, masės, echogeniškumas"
+			/>
 		</div>
-
-		<Textarea
-			title="Kiti pakitimai"
-			bind:value={$maleTractLStore.otherChanges}
-			placeholder="Cistos, masės, echogeniškumas"
-		/>
-    </div>
-
 
 		<div class="font-bold text-md text-center mb-2">Dešinė sėklidė</div>
 		<div class="flex-col md:flex-row flex gap-5">

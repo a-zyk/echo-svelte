@@ -130,13 +130,10 @@
 	{/if}
 
 	{#if $lymphnodes.echogenSacral && $lymphnodes.numberSacral > 1}
-		<span
-			>Sakralinių lm. parenchima yra {$lymphnodes.echogenSacral} juos supantiems riebalams.</span
+		<span>Sakralinių lm. parenchima yra {$lymphnodes.echogenSacral} juos supantiems riebalams.</span
 		>
 	{:else if $lymphnodes.echogenSacral}
-		<span
-			>Sakralinio lm. parenchima yra {$lymphnodes.echogenSacral} ją supantiems riebalams.</span
-		>
+		<span>Sakralinio lm. parenchima yra {$lymphnodes.echogenSacral} ją supantiems riebalams.</span>
 	{/if}
 
 	{#if sizesSac}

@@ -12,12 +12,14 @@
 </script>
 
 <div class="mb-2">
-	{#if $liver.echogen}
+	{#if $liver.echogen && $liver.comtoSpleen}
+		<span
+			>Kepenų parenchima yra {$liver.echogen}, {$liver.comtoSpleen} blužnies parenchimai.</span
+		>
+	{:else if $liver.echogen}
 		<span>Kepenų parenchima yra {$liver.echogen}.</span>
-	{/if}
-
-	{#if $liver.comtoSpleen}
-		<span>Lyginant su blužnies parenchima, kepenų parenchima yra {$liver.comtoSpleen}.</span>
+	{:else if $liver.comtoSpleen}
+		<span>Kepenų parenchima yra {$liver.comtoSpleen} lyginant su blužnies parenchima.</span>
 	{/if}
 
 	{#if $liver.margins}
@@ -32,8 +34,8 @@
 		<span>{$liver.otherChanges}.</span>
 	{/if}
 
-		<!-- limfmazgis -->
-		{#if $lymphnodes.numberHepatic === 1 && $lymphnodes.sizeHepatic}
+	<!-- limfmazgis -->
+	{#if $lymphnodes.numberHepatic === 1 && $lymphnodes.sizeHepatic}
 		<span>Stebimas 1 {$lymphnodes.sizeHepatic}s hepatinis limfinis mazgas.</span>
 	{:else if $lymphnodes.numberHepatic && $lymphnodes.sizeHepatic}
 		<span

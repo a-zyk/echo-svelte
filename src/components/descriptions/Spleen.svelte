@@ -1,19 +1,22 @@
 <script>
 	import { spleen, lymphnodes } from '../../stores/description';
 
-	$: sizes = $lymphnodes.splenic.map(splenic => {
-		if (splenic.length && splenic.width) {
-			return `${splenic.length}x${splenic.width}cm.`
-		}
-	}).filter(size => size).join(', ')
+	$: sizes = $lymphnodes.splenic
+		.map((splenic) => {
+			if (splenic.length && splenic.width) {
+				return `${splenic.length}x${splenic.width}cm.`;
+			}
+		})
+		.filter((size) => size)
+		.join(', ');
 </script>
 
 <div class="mb-2">
-	{#if $spleen.echogen}
+	{#if $spleen.echogen && $spleen.comToLiver}
+		<span>Blužnies parenchima yra {$spleen.echogen}, {$spleen.comToLiver} kepenų parenchimai.</span>
+	{:else if $spleen.echogen}
 		<span>Blužnies parenchima yra {$spleen.echogen}.</span>
-	{/if}
-
-	{#if $spleen.comToLiver}
+	{:else if $spleen.comToLiver}
 		<span>Lyginant su kepenų parenchima, blužnies parenchima yra {$spleen.comToLiver}.</span>
 	{/if}
 
@@ -39,15 +42,12 @@
 		<span>Blužninių lm. parenchima yra {$lymphnodes.echogenSplenic} juos supantiems riebalams.</span
 		>
 	{:else if $lymphnodes.echogenSplenic}
-		<span
-			>Blužninio lm. parenchima yra {$lymphnodes.echogenSplenic} jį supantiems riebalams.</span
-		>
+		<span>Blužninio lm. parenchima yra {$lymphnodes.echogenSplenic} jį supantiems riebalams.</span>
 	{/if}
 
 	{#if sizes}
 		<span>Ilgis ir plotis {sizes}</span>
 	{/if}
-	
 
 	{#if $lymphnodes.otherChangesSplenic}
 		<span>{$lymphnodes.otherChangesSplenic}</span>

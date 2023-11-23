@@ -8,6 +8,9 @@
 	import NumberInput from '../../NumberInput.svelte';
 	import Textarea from '../../Textarea.svelte';
 	import Tooltip from '../../Tooltip.svelte';
+
+	const prefixLeft = "adrenalLeft"
+	const prefixRight = "adrenalRight"
 </script>
 
 <Toggle autoclosable="true" classes="card">
@@ -21,34 +24,36 @@
 			/>
 		</div>
 		<div class="radio">
-			<RadioBtn bind:group={$adrenalsLStore.echogen} value="izoechogeniška" name="echogenicityL" />
-			<RadioBtn bind:group={$adrenalsLStore.echogen} value="hipoechogeniška" name="echogenicityL" />
-			<RadioBtn
+			<RadioBtn prefix={prefixLeft} bind:group={$adrenalsLStore.echogen} value="izoechogeniška" name="echogenicityL" />
+			<RadioBtn prefix={prefixLeft} bind:group={$adrenalsLStore.echogen} value="hipoechogeniška" name="echogenicityL" />
+			<RadioBtn prefix={prefixLeft}
 				bind:group={$adrenalsLStore.echogen}
 				value="hiperechogeniška"
 				name="echogenicityL"
 			/>
 		</div>
 
-		<NumberInput
+		<NumberInput prefix={prefixLeft}
+		
 			bind:value={$adrenalsLStore.length}
 			tooltipText="Normalus prieinksčio ilgis katėms yra ~1-1.1cm, šunims: ~1-5cm."
 			title="Prieinksčio ilgis, cm"
 		/>
 
 		<div class=" flex-col md:flex-row flex gap-5">
-			<NumberInput
+			<NumberInput prefix={prefixLeft}
 				bind:value={$adrenalsLStore.widthFront}
 				tooltipText="Normalus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title="Priekinio poliaus plotis, cm"
 			/>
-			<NumberInput
+			<NumberInput prefix={prefixLeft}
 				bind:value={$adrenalsLStore.widthBack}
 				tooltipText="Normalus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title=" Galinio poliaus plotis, cm"
 			/>
 		</div>
 		<Textarea
+		prefix={prefixLeft}
 			title="Kiti pakitimai"
 			bind:value={$adrenalsLStore.otherChanges}
 			placeholder="masės, kalcifikatai"
@@ -62,34 +67,35 @@
 			/>
 		</div>
 		<div class="radio">
-			<RadioBtn bind:group={$adrenalsRStore.echogen} value="izoechogeniška" name="echogenicityL" />
-			<RadioBtn bind:group={$adrenalsRStore.echogen} value="hipoechogeniška" name="echogenicityL" />
-			<RadioBtn
+			<RadioBtn prefix={prefixRight} bind:group={$adrenalsRStore.echogen} value="izoechogeniška" name="echogenicityL" />
+			<RadioBtn prefix={prefixRight} bind:group={$adrenalsRStore.echogen} value="hipoechogeniška" name="echogenicityL" />
+			<RadioBtn prefix={prefixRight}
 				bind:group={$adrenalsRStore.echogen}
 				value="hiperechogeniška"
 				name="echogenicityL"
 			/>
 		</div>
 
-		<NumberInput
+		<NumberInput prefix={prefixRight}
 			bind:value={$adrenalsRStore.length}
 			tooltipText="Normalaus prieinksčio ilgis katėms yra ~1-1.1cm, šunims: ~1-5cm."
 			title="Prieinksčio ilgis, cm"
 		/>
 
 		<div class=" flex-col md:flex-row flex gap-5">
-			<NumberInput
+			<NumberInput prefix={prefixRight}
 				bind:value={$adrenalsRStore.widthFront}
 				tooltipText="Normalaus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title="Priekinio poliaus plotis, cm"
 			/>
-			<NumberInput
+			<NumberInput prefix={prefixRight}
 				bind:value={$adrenalsRStore.widthBack}
 				tooltipText="Normalaus prieinksčio plotis katėms yra ~0.35-0.45cm , šunims: ~0.6-0.8cm."
 				title=" Galinio poliaus plotis, cm"
 			/>
 		</div>
 		<Textarea
+		prefix={prefixRight}
 			title="Kiti pakitimai"
 			bind:value={$adrenalsRStore.otherChanges}
 			placeholder="masės, kalcifikatai"

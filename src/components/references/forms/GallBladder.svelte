@@ -5,6 +5,8 @@
 	import NumberInput from '../../NumberInput.svelte';
 	import Textarea from '../../Textarea.svelte';
 	import Tooltip from '../../Tooltip.svelte';
+
+	const prefix = "gallBladder"
 </script>
 
 <Toggle autoclosable="true" classes="card">
@@ -17,30 +19,31 @@
 			/>
 		</div>
 		<div class="radio">
-			<RadioBtn bind:group={$gallBStore.wallThickness} value="sustorėjusi" name="wall-thickness" />
-			<RadioBtn
+			<RadioBtn {prefix} bind:group={$gallBStore.wallThickness} value="sustorėjusi" name="wall-thickness" />
+			<RadioBtn {prefix}
 				bind:group={$gallBStore.wallThickness}
 				value="nesustorėjusi"
 				name="wall-thickness"
 			/>
 		</div>
 
-		<NumberInput bind:value={$gallBStore.thickness} title=" Tulžies pūslės sienelės storis, cm" />
+		<NumberInput {prefix} bind:value={$gallBStore.thickness} title=" Tulžies pūslės sienelės storis, cm" />
 
 		<div class="titles">Bendrasisi tulžies latakas</div>
 
 		<div class="radio">
-			<RadioBtn bind:group={$gallBStore.ductus} value="neprasiplėtęs" name="ductus" />
-			<RadioBtn bind:group={$gallBStore.ductus} value="prasiplėtęs" name="ductus" />
+			<RadioBtn {prefix} bind:group={$gallBStore.ductus} value="neprasiplėtęs" name="ductus" />
+			<RadioBtn {prefix} bind:group={$gallBStore.ductus} value="prasiplėtęs" name="ductus" />
 		</div>
 
-		<NumberInput
+		<NumberInput {prefix}
 			tooltipText="Normalus tulžies pūslės latako skersmuo yra ≤0.4cm katėms ir ≤0.3cm šunims."
 			bind:value={$gallBStore.ductusCm}
 			title=" Bendrojo tulžies latako skersmuo, cm"
 		/>
 
 		<Textarea
+		{prefix}
 			title="Kiti pakitimai"
 			bind:value={$gallBStore.otherChanges}
 			placeholder="akmenys, nuosėdos, dariniai"

@@ -13,6 +13,10 @@
 	$: prostateLenght = $prostateStore.age * 0.143 + $prostateStore.weight * 0.055 + 3.31;
 
 	$: prostateWidth = $prostateStore.age * 0.089 + $prostateStore.weight * 0.047 + 3.45;
+
+	const prefixProstate = 'maleProstate';
+	const prefixLeftTesticle = 'maleLeftTesticle';
+	const prefixRightTesticle = 'maleRightTesticle';
 </script>
 
 <Toggle autoclosable="true" classes="card">
@@ -26,8 +30,18 @@
 				<Tooltip tooltipText="Normalios prostatos parenchima yra homogeniška." />
 			</div>
 			<div class="radio">
-				<RadioBtn bind:group={$prostateStore.echogen} value="homogeniška" name="echogenicity" />
-				<RadioBtn bind:group={$prostateStore.echogen} value="heterogeniška" name="echogenicity" />
+				<RadioBtn
+					prefix={prefixProstate}
+					bind:group={$prostateStore.echogen}
+					value="homogeniška"
+					name="echogenicity"
+				/>
+				<RadioBtn
+					prefix={prefixProstate}
+					bind:group={$prostateStore.echogen}
+					value="heterogeniška"
+					name="echogenicity"
+				/>
 			</div>
 			<div class="flex gap-2">
 				<div class="titles">Prostata ją supantiems audiniams</div>
@@ -36,17 +50,34 @@
 				/>
 			</div>
 			<div class="radio">
-				<RadioBtn bind:group={$prostateStore.comToFat} value="izoechogeniška" name="toFat" />
-				<RadioBtn bind:group={$prostateStore.comToFat} value="hipoechogeniška" name="toFat" />
-				<RadioBtn bind:group={$prostateStore.comToFat} value="hiperechogeniška" name="toFat" />
+				<RadioBtn
+					prefix={prefixProstate}
+					bind:group={$prostateStore.comToFat}
+					value="izoechogeniška"
+					name="toFat"
+				/>
+				<RadioBtn
+					prefix={prefixProstate}
+					bind:group={$prostateStore.comToFat}
+					value="hipoechogeniška"
+					name="toFat"
+				/>
+				<RadioBtn
+					prefix={prefixProstate}
+					bind:group={$prostateStore.comToFat}
+					value="hiperechogeniška"
+					name="toFat"
+				/>
 			</div>
 
 			<div class="flex  flex-col md:flex-row gap-5">
 				<NumberInput
+					prefix={prefixProstate}
 					bind:value={$prostateStore.length}
 					title="Prostatos ilgis (kraniokaudalinis), cm"
 				/>
 				<NumberInput
+					prefix={prefixProstate}
 					bind:value={$prostateStore.width}
 					title="Prostatos plotis (laterolateralinis), cm"
 				/>
@@ -54,9 +85,13 @@
 
 			<div class="titles">Skaičiuoti normalų prostatos ilgį ir plotį nekastruotam šuniui</div>
 			<div class="flex  flex-col md:flex-row gap-5">
-				<NumberInput bind:value={$prostateStore.age} title="Šuns amžius" />
+				<NumberInput prefix={prefixProstate} bind:value={$prostateStore.age} title="Šuns amžius" />
 
-				<NumberInput bind:value={$prostateStore.weight} title="Šuns svoris, kg" />
+				<NumberInput
+					prefix={prefixProstate}
+					bind:value={$prostateStore.weight}
+					title="Šuns svoris, kg"
+				/>
 			</div>
 
 			{#if prostateLenght && prostateWidth}
@@ -77,6 +112,7 @@
 			{/if}
 
 			<Textarea
+				prefix={prefixProstate}
 				title="Kiti pakitimai"
 				bind:value={$prostateStore.otherChanges}
 				placeholder="Cistos, mineralizacijos, šlaplė, os penis, masės"
@@ -87,11 +123,20 @@
 			<div class="font-bold text-md text-center mb-2">Kairė sėklidė</div>
 
 			<div class="flex-col md:flex-row flex gap-5">
-				<NumberInput bind:value={$maleTractLStore.length} title="Sėklidės ilgis, cm" />
-				<NumberInput bind:value={$maleTractLStore.width} title="Sėklidės plotis, cm" />
+				<NumberInput
+					prefix={prefixLeftTesticle}
+					bind:value={$maleTractLStore.length}
+					title="Sėklidės ilgis, cm"
+				/>
+				<NumberInput
+					prefix={prefixLeftTesticle}
+					bind:value={$maleTractLStore.width}
+					title="Sėklidės plotis, cm"
+				/>
 			</div>
 
 			<Textarea
+				prefix={prefixLeftTesticle}
 				title="Kiti pakitimai"
 				bind:value={$maleTractLStore.otherChanges}
 				placeholder="Cistos, masės, echogeniškumas"
@@ -100,11 +145,20 @@
 
 		<div class="font-bold text-md text-center mb-2">Dešinė sėklidė</div>
 		<div class="flex-col md:flex-row flex gap-5">
-			<NumberInput bind:value={$maleTractRStore.length} title="Sėklidės ilgis, cm" />
-			<NumberInput bind:value={$maleTractRStore.width} title="Sėklidės plotis, cm" />
+			<NumberInput
+				prefix={prefixRightTesticle}
+				bind:value={$maleTractRStore.length}
+				title="Sėklidės ilgis, cm"
+			/>
+			<NumberInput
+				prefix={prefixRightTesticle}
+				bind:value={$maleTractRStore.width}
+				title="Sėklidės plotis, cm"
+			/>
 		</div>
 
 		<Textarea
+			prefix={prefixRightTesticle}
 			title="Kiti pakitimai"
 			bind:value={$maleTractRStore.otherChanges}
 			placeholder="Cistos, masės, echogeniškumas"

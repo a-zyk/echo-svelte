@@ -4,6 +4,18 @@
 	import AllForms from '../components/references/forms/All.svelte';
 	import AllDescriptions from '../components/descriptions/All.svelte';
 	import Copy from '../components/Copy.svelte';
+	import { onMount } from 'svelte';
+
+	import mixpanel from 'mixpanel-browser';
+
+	mixpanel.init('f79db44423748f2108b0460d56957c9a', {
+		debug: true,
+		track_pageview: true,
+		persistence: 'localStorage'
+	});
+
+	let listener;
+
 	let descriptionElement;
 	let descriptionHidden = true;
 	const hideDescription = () => {
@@ -13,9 +25,15 @@
 	const showDescription = () => {
 		descriptionHidden = false;
 	};
+
+	const track = ({ detail: eventName }) => {
+		mixpanel.track('input_changed', { input: eventName });
+	};
+
+	onMount(() => listener.addEventListener('track', track));
 </script>
 
-<div class="container mb-5">
+<div class="container mb-5" bind:this={listener}>
 	<div class="flex flex-row gap-10 mb-2 justify-between md:hidden">
 		<button
 			class="{descriptionHidden

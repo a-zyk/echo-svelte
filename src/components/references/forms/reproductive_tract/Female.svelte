@@ -9,21 +9,23 @@
 		femaleTractR as femaleTractRStore,
 		uterus as uterusStore
 	} from '../../../../stores/description';
+	const prefixUterus = 'femaleUterus';
+	const prefixLeftOvary = 'femaleLeftOvary';
+	const prefixRightOvary = 'femaleRightOvary';
 </script>
 
 <Toggle autoclosable="true" classes="card">
 	<div slot="title">Patelės lytinė sistema</div>
 	<div slot="content">
-
 		<div class="mb-3">
-		<div class="font-bold text-md text-center mb-2">Gimda</div>
-		<Textarea
-		title="Kiti pakitimai"
-		bind:value={$uterusStore.otherChanges}
-		placeholder="Gimdos plotis, turinys, gleivinė, masės"
-	/>
-</div>
-
+			<div class="font-bold text-md text-center mb-2">Gimda</div>
+			<Textarea
+				prefix={prefixUterus}
+				title="Kiti pakitimai"
+				bind:value={$uterusStore.otherChanges}
+				placeholder="Gimdos plotis, turinys, gleivinė, masės"
+			/>
+		</div>
 
 		<div class="font-bold text-md text-center mb-2">Kairė kiaušidė</div>
 
@@ -32,16 +34,19 @@
 		</div>
 		<div class="radio">
 			<RadioBtn
+				prefix={prefixLeftOvary}
 				bind:group={$femaleTractLStore.echogen}
 				value="izoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
+				prefix={prefixLeftOvary}
 				bind:group={$femaleTractLStore.echogen}
 				value="hipoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
+				prefix={prefixLeftOvary}
 				bind:group={$femaleTractLStore.echogen}
 				value="hiperechogeniška"
 				name="echogenicity"
@@ -50,6 +55,7 @@
 
 		<div class="flex-col md:flex-row flex gap-5">
 			<NumberInput
+				prefix={prefixLeftOvary}
 				tooltipText="Kalės normalus kiaušidės dydis 1-2cm, katės iki 1cm. Dydis kinta lytinio ciklo metu, rujos metu būna didžiausias"
 				bind:value={$femaleTractLStore.length}
 				title="Kiaušidės ilgis"
@@ -58,6 +64,7 @@
 		</div>
 
 		<Textarea
+			prefix={prefixLeftOvary}
 			title="Kiti pakitimai"
 			bind:value={$femaleTractLStore.otherChanges}
 			placeholder="folikulai, geltonkūniai,masės"
@@ -70,16 +77,19 @@
 		</div>
 		<div class="radio">
 			<RadioBtn
+				prefix={prefixRightOvary}
 				bind:group={$femaleTractRStore.echogen}
 				value="izoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
+				prefix={prefixRightOvary}
 				bind:group={$femaleTractRStore.echogen}
 				value="hipoechogeniška"
 				name="echogenicity"
 			/>
 			<RadioBtn
+				prefix={prefixRightOvary}
 				bind:group={$femaleTractRStore.echogen}
 				value="hiperechogeniška"
 				name="echogenicity"
@@ -88,14 +98,20 @@
 
 		<div class="flex-col md:flex-row flex gap-5">
 			<NumberInput
+				prefix={prefixRightOvary}
 				tooltipText="Kalės normalus kiaušidės dydis 1-2cm, katės iki 1cm. Dydis kinta lytinio ciklo metu, rujos metu būna didžiausias"
 				bind:value={$femaleTractRStore.length}
 				title="Kiaušidės ilgis"
 			/>
-			<NumberInput bind:value={$femaleTractRStore.width} title="Kiaušidės plotis, cm" />
+			<NumberInput
+				prefix={prefixRightOvary}
+				bind:value={$femaleTractRStore.width}
+				title="Kiaušidės plotis, cm"
+			/>
 		</div>
 
 		<Textarea
+			prefix={prefixRightOvary}
 			title="Kiti pakitimai"
 			bind:value={$femaleTractRStore.otherChanges}
 			placeholder="folikulai, geltonkūniai, masės"

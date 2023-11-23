@@ -1,4 +1,4 @@
-import{S,i as q,s as w,e as p,t as f,k as A,c,a as u,h as b,d as n,m as E,b as d,g as I,G as i,E as v}from"../chunks/index-50ca8955.js";function J(D){let t,a,s,k,h,e,g,y,o,j;return{c(){t=p("div"),a=p("div"),s=p("p"),k=f(`Labas! \u0160is projektas yra skirtas sukurti echoskopijos apra\u0161ymo pagrind\u0105. Tikiuosi tai pad\u0117s
+import{S,i as q,s as w,e as p,t as f,k as A,c,a as u,h as b,d as n,m as E,b as d,g as I,G as i,E as v}from"../chunks/index-5a792f66.js";function J(D){let t,a,s,k,h,e,g,y,o,j;return{c(){t=p("div"),a=p("div"),s=p("p"),k=f(`Labas! \u0160is projektas yra skirtas sukurti echoskopijos apra\u0161ymo pagrind\u0105. Tikiuosi tai pad\u0117s
 			pagerinti echoskopijos apra\u0161ymo technik\u0105 bei pagreitins veterinaro darb\u0105. Sugeneruot\u0105 tekst\u0105
 			galite kopijuoti ar toliau naudoti/redaguoti kaip jums patinka. Projekt\u0105 k\u016Briau, kaip mokymosi
 			priemon\u0119.`),h=A(),e=p("p"),g=f(`Pagrindinis informacijos \u0161altinis: Atlas of small animal ultrasonography 2nd edition by Dominique
